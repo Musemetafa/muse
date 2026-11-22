@@ -1,0 +1,201 @@
+{
+  "id": "riddle-round",
+  "voice": "af_heart",
+  "voice_provisional": true,
+  "sample_rate": 24000,
+  "total_duration": 92.294125,
+  "total_synth_seconds": 54.64524173736572,
+  "total_words": 197,
+  "mix_peak": 0.5779013633728027,
+  "mix_rms": 0.05081964284181595,
+  "peak_rss_mb": 658.24609375,
+  "beats": [
+    {
+      "kind": "intro",
+      "parts": [
+        {
+          "speak": "Three riddles. Three clues each. Ten seconds to solve each one. Get all three, and your brain is officially warmed up.",
+          "dur": 7.29675,
+          "seg": "beat00_part0.wav",
+          "start": 0.0,
+          "end": 7.29675
+        }
+      ],
+      "start": 0.0,
+      "end": 7.29675
+    },
+    {
+      "kind": "ask",
+      "parts": [
+        {
+          "speak": "Riddle one. Clue one: I repeat everything you say, but I have no mouth of my own.",
+          "dur": 4.797416666666667,
+          "seg": "beat01_part0.wav",
+          "start": 7.64675,
+          "end": 12.444166666666668
+        },
+        {
+          "speak": "Clue two: you can hear me, but you can never see me.",
+          "dur": 2.997125,
+          "seg": "beat01_part1.wav",
+          "start": 12.694166666666668,
+          "end": 15.691291666666668
+        },
+        {
+          "speak": "Clue three: the louder you shout, the louder I answer. Ten seconds, go.",
+          "dur": 4.3765,
+          "seg": "beat01_part2.wav",
+          "start": 15.941291666666668,
+          "end": 20.31779166666667
+        }
+      ],
+      "n": 1,
+      "total": 3,
+      "start": 7.64675,
+      "end": 20.31779166666667
+    },
+    {
+      "kind": "think",
+      "parts": [],
+      "seconds": 10,
+      "start": 20.66779166666667,
+      "end": 30.66779166666667
+    },
+    {
+      "kind": "answer",
+      "parts": [
+        {
+          "speak": "An echo. Sound bouncing back to you.",
+          "dur": 2.3394166666666667,
+          "seg": "beat03_part0.wav",
+          "start": 31.01779166666667,
+          "end": 33.35720833333334
+        }
+      ],
+      "n": 1,
+      "total": 3,
+      "start": 31.01779166666667,
+      "end": 33.35720833333334
+    },
+    {
+      "kind": "ask",
+      "parts": [
+        {
+          "speak": "Riddle two. Clue one: I follow you everywhere in daylight.",
+          "dur": 3.2549166666666665,
+          "seg": "beat04_part0.wav",
+          "start": 33.70720833333334,
+          "end": 36.96212500000001
+        },
+        {
+          "speak": "Clue two: I copy your every move, but I never make a sound.",
+          "dur": 3.5497916666666667,
+          "seg": "beat04_part1.wav",
+          "start": 37.21212500000001,
+          "end": 40.76191666666667
+        },
+        {
+          "speak": "Clue three: you can never touch me, but I am always right behind you. Ten seconds, go.",
+          "dur": 5.146916666666667,
+          "seg": "beat04_part2.wav",
+          "start": 41.01191666666667,
+          "end": 46.15883333333334
+        }
+      ],
+      "n": 2,
+      "total": 3,
+      "start": 33.70720833333334,
+      "end": 46.15883333333334
+    },
+    {
+      "kind": "think",
+      "parts": [],
+      "seconds": 10,
+      "start": 46.50883333333334,
+      "end": 56.50883333333334
+    },
+    {
+      "kind": "answer",
+      "parts": [
+        {
+          "speak": "Your shadow. It follows you, but it never makes a sound.",
+          "dur": 3.1547916666666667,
+          "seg": "beat06_part0.wav",
+          "start": 56.858833333333344,
+          "end": 60.01362500000001
+        }
+      ],
+      "n": 2,
+      "total": 3,
+      "start": 56.858833333333344,
+      "end": 60.01362500000001
+    },
+    {
+      "kind": "ask",
+      "parts": [
+        {
+          "speak": "Riddle three. Clue one: the more I dry you, the wetter I become.",
+          "dur": 3.821,
+          "seg": "beat07_part0.wav",
+          "start": 60.36362500000001,
+          "end": 64.18462500000001
+        },
+        {
+          "speak": "Clue two: I hang on a hook and wait for your shower.",
+          "dur": 2.7035416666666667,
+          "seg": "beat07_part1.wav",
+          "start": 64.43462500000001,
+          "end": 67.13816666666668
+        },
+        {
+          "speak": "Clue three: I soak it all up, then I need to dry out myself. Ten seconds, go.",
+          "dur": 4.946916666666667,
+          "seg": "beat07_part2.wav",
+          "start": 67.38816666666668,
+          "end": 72.33508333333334
+        }
+      ],
+      "n": 3,
+      "total": 3,
+      "start": 60.36362500000001,
+      "end": 72.33508333333334
+    },
+    {
+      "kind": "think",
+      "parts": [],
+      "seconds": 10,
+      "start": 72.68508333333334,
+      "end": 82.68508333333334
+    },
+    {
+      "kind": "answer",
+      "parts": [
+        {
+          "speak": "A towel. The more it dries you, the wetter it gets.",
+          "dur": 2.97725,
+          "seg": "beat09_part0.wav",
+          "start": 83.03508333333333,
+          "end": 86.01233333333333
+        }
+      ],
+      "n": 3,
+      "total": 3,
+      "start": 83.03508333333333,
+      "end": 86.01233333333333
+    },
+    {
+      "kind": "outro",
+      "parts": [
+        {
+          "speak": "How many did you solve? Tell me your score in the comments, and send this to a friend who thinks they are clever.",
+          "dur": 5.931791666666666,
+          "seg": "beat10_part0.wav",
+          "start": 86.36233333333332,
+          "end": 92.294125
+        }
+      ],
+      "start": 86.36233333333332,
+      "end": 92.294125
+    }
+  ]
+}

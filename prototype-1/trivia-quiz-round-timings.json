@@ -1,0 +1,237 @@
+{
+  "id": "trivia-quiz-round",
+  "voice": "af_heart",
+  "voice_provisional": true,
+  "sample_rate": 24000,
+  "total_duration": 90.41054166666666,
+  "total_synth_seconds": 58.61185050010681,
+  "total_words": 178,
+  "mix_peak": 0.5242361426353455,
+  "mix_rms": 0.053034987300634384,
+  "peak_rss_mb": 696.82421875,
+  "beats": [
+    {
+      "kind": "intro",
+      "parts": [
+        {
+          "speak": "Think you know it all? Five questions. No Googling, no lifelines. See how many you can get right, and drop your score in the comments when you are done.",
+          "dur": 8.6025,
+          "seg": "beat00_part0.wav",
+          "start": 0.0,
+          "end": 8.6025
+        }
+      ],
+      "start": 0.0,
+      "end": 8.6025
+    },
+    {
+      "kind": "ask",
+      "parts": [
+        {
+          "speak": "Question one, and this one looks easy. Which planet is known as the Red Planet?",
+          "dur": 4.683791666666667,
+          "seg": "beat01_part0.wav",
+          "start": 8.952499999999999,
+          "end": 13.636291666666665
+        }
+      ],
+      "n": 1,
+      "total": 5,
+      "start": 8.952499999999999,
+      "end": 13.636291666666665
+    },
+    {
+      "kind": "think",
+      "parts": [],
+      "seconds": 5,
+      "start": 13.986291666666665,
+      "end": 18.986291666666666
+    },
+    {
+      "kind": "answer",
+      "parts": [
+        {
+          "speak": "The answer is Mars. It looks red because of iron oxide, basically rust, covering its surface.",
+          "dur": 5.9805,
+          "seg": "beat03_part0.wav",
+          "start": 19.336291666666668,
+          "end": 25.316791666666667
+        }
+      ],
+      "n": 1,
+      "total": 5,
+      "start": 19.336291666666668,
+      "end": 25.316791666666667
+    },
+    {
+      "kind": "ask",
+      "parts": [
+        {
+          "speak": "Question two. What is the largest ocean on Earth?",
+          "dur": 2.8962083333333335,
+          "seg": "beat04_part0.wav",
+          "start": 25.66679166666667,
+          "end": 28.563000000000002
+        }
+      ],
+      "n": 2,
+      "total": 5,
+      "start": 25.66679166666667,
+      "end": 28.563000000000002
+    },
+    {
+      "kind": "think",
+      "parts": [],
+      "seconds": 5,
+      "start": 28.913000000000004,
+      "end": 33.913000000000004
+    },
+    {
+      "kind": "answer",
+      "parts": [
+        {
+          "speak": "The Pacific Ocean. It covers more area than all of Earth's land put together.",
+          "dur": 4.45725,
+          "seg": "beat06_part0.wav",
+          "start": 34.263000000000005,
+          "end": 38.72025000000001
+        }
+      ],
+      "n": 2,
+      "total": 5,
+      "start": 34.263000000000005,
+      "end": 38.72025000000001
+    },
+    {
+      "kind": "ask",
+      "parts": [
+        {
+          "speak": "Question three. How many sides does a hexagon have?",
+          "dur": 3.059041666666667,
+          "seg": "beat07_part0.wav",
+          "start": 39.07025000000001,
+          "end": 42.129291666666674
+        }
+      ],
+      "n": 3,
+      "total": 5,
+      "start": 39.07025000000001,
+      "end": 42.129291666666674
+    },
+    {
+      "kind": "think",
+      "parts": [],
+      "seconds": 5,
+      "start": 42.479291666666676,
+      "end": 47.479291666666676
+    },
+    {
+      "kind": "answer",
+      "parts": [
+        {
+          "speak": "Six. A hexagon has six sides and six angles. Think of a honeycomb cell.",
+          "dur": 4.847291666666667,
+          "seg": "beat09_part0.wav",
+          "start": 47.82929166666668,
+          "end": 52.67658333333334
+        }
+      ],
+      "n": 3,
+      "total": 5,
+      "start": 47.82929166666668,
+      "end": 52.67658333333334
+    },
+    {
+      "kind": "ask",
+      "parts": [
+        {
+          "speak": "Question four. What is the chemical symbol for gold?",
+          "dur": 3.177791666666667,
+          "seg": "beat10_part0.wav",
+          "start": 53.02658333333334,
+          "end": 56.204375000000006
+        }
+      ],
+      "n": 4,
+      "total": 5,
+      "start": 53.02658333333334,
+      "end": 56.204375000000006
+    },
+    {
+      "kind": "think",
+      "parts": [],
+      "seconds": 5,
+      "start": 56.55437500000001,
+      "end": 61.55437500000001
+    },
+    {
+      "kind": "answer",
+      "parts": [
+        {
+          "speak": "The letters A and U. The symbol comes from aurum, the Latin word for gold.",
+          "dur": 4.7937916666666665,
+          "seg": "beat12_part0.wav",
+          "start": 61.90437500000001,
+          "end": 66.69816666666668
+        }
+      ],
+      "n": 4,
+      "total": 5,
+      "start": 61.90437500000001,
+      "end": 66.69816666666668
+    },
+    {
+      "kind": "ask",
+      "parts": [
+        {
+          "speak": "Question five, the last one. In what year did humans first land on the Moon?",
+          "dur": 4.507125,
+          "seg": "beat13_part0.wav",
+          "start": 67.04816666666667,
+          "end": 71.55529166666668
+        }
+      ],
+      "n": 5,
+      "total": 5,
+      "start": 67.04816666666667,
+      "end": 71.55529166666668
+    },
+    {
+      "kind": "think",
+      "parts": [],
+      "seconds": 5,
+      "start": 71.90529166666667,
+      "end": 76.90529166666667
+    },
+    {
+      "kind": "answer",
+      "parts": [
+        {
+          "speak": "Nineteen sixty-nine. Apollo Eleven landed on July twentieth, nineteen sixty-nine.",
+          "dur": 5.573041666666667,
+          "seg": "beat15_part0.wav",
+          "start": 77.25529166666666,
+          "end": 82.82833333333333
+        }
+      ],
+      "n": 5,
+      "total": 5,
+      "start": 77.25529166666666,
+      "end": 82.82833333333333
+    },
+    {
+      "kind": "outro",
+      "parts": [
+        {
+          "speak": "That is your score out of five. Got all five? Then you are officially smarter than the average internet. Follow for round two.",
+          "dur": 7.232208333333333,
+          "seg": "beat16_part0.wav",
+          "start": 83.17833333333333,
+          "end": 90.41054166666666
+        }
+      ],
+      "start": 83.17833333333333,
+      "end": 90.41054166666666
+    }
+  ]
+}

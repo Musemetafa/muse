@@ -1,6 +1,6 @@
 # Factory State
 
-Live operating state. Updated by every run. Last updated: 2026-11-22 ~13:50 UTC.
+Live operating state. Updated by every run. Last updated: 2026-11-22 ~14:15 UTC.
 
 ## Highest goal
 
@@ -44,7 +44,17 @@ independence from Mohamed's daily involvement. Zero spend in this stage.
   consecutive pairs in scene 3). Render ~5.5 s from workspace disk.
   Lesson: /tmp was wiped mid-run — evidence must be written to
   ~/workspace immediately, never left in /tmp between steps.
-- 2026-11-22: Niche discovery, desk research phase DONE
+- **Prototype videos — DONE, both PASS.** Started early at Mohamed's
+  request (13:57 UTC) instead of waiting for the 19:45 run; built and
+  verified 14:15 UTC (`prototype-1/`): trivia quiz round 90.41 s and
+  riddle round 92.29 s, 720x1280, 30 fps, Kokoro af_heart narration
+  (provisional), code-computed motion, word-timed captions; reruns
+  byte-identical; no black/frozen/silence; contact sheets viewed and
+  legible. First end-to-end 90 s narrated videos from the factory.
+  Whisper flagged spots to listen for: "A and U"→"and you",
+  "aurum"→"orum", "wetter"→"better", "An echo"→"In echo". Fair
+  comparison method written in prototype-1/REPORT.md; no winner
+  declared — needs real audience data.
   (`research/niche-discovery-2026-11-22.md`, synthesis of three reports:
   `niche-demand-2026-11-22.md`, `niche-formats-stack-fit-2026-11-22.md`,
   `niche-commercial-2026-11-22.md`). Ranked shortlist against the six
@@ -58,11 +68,10 @@ independence from Mohamed's daily involvement. Zero spend in this stage.
 
 ## In progress
 
-- **Prototype videos for the leading candidates — ready to start.**
-  Build a trivia quiz round and a riddle round, each 60+ seconds, with
-  Kokoro narration, code-computed motion, faster-whisper captions, from
-  the proven stack; define a fair comparison method (metrics, baselines,
-  what counts as a meaningful difference) before any success judgement.
+- **Mohamed's evaluation of the two prototypes.** He watches/listens to
+  the trivia and riddle videos, judges voice naturalness (af_heart vs
+  am_adam), visual appeal, and which format he prefers. No loop work
+  depends on his answer before the next scheduled run.
 
 ## Decisions (with evidence)
 
@@ -138,16 +147,12 @@ independence from Mohamed's daily involvement. Zero spend in this stage.
 
 ## Next step
 
-1. Build the first prototype videos for the leading candidates (trivia
-   quiz round + riddle round), each 60+ seconds, with Kokoro narration,
-   code-computed motion, and faster-whisper captions, from the proven
-   stack. This also serves as the first real test of TTS naturalness for
-   quiz/riddle delivery (blind listening test still pending).
-2. Define a fair comparison method before any success judgement: metrics,
-   baselines (Revid 0.08% comments/view, 7.1% likes/view; Socialinsider
-   2.6% engagement by followers), and what counts as a meaningful
-   difference between prototypes. No success numbers set before the
-   comparison method is defined.
+1. Mohamed evaluates the two prototype videos (voice, visuals, format
+   preference). Then decide the audience-test route: the TikTok account
+   is managed by the other agent and Muse does not publish — publishing
+   a test needs Mohamed's explicit assignment for that task.
+2. If he picks am_adam, re-synthesize narration and re-render both
+   videos with that voice (~2 min synthesis + ~70 s render per video).
 
 ## Next step criteria (for the prototype videos)
 

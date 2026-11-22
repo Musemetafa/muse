@@ -1,0 +1,891 @@
+{
+  "id": "trivia-quiz-round",
+  "model": "tiny.en",
+  "load_seconds": 1.771752119064331,
+  "transcribe_seconds": 4.614473581314087,
+  "detected_language": "en",
+  "language_probability": 1.0,
+  "transcript": "Think you know it all, five questions.  No Googling, no lifelines.  See how many you can get right  and drop your score in the comments when you are done.  Question one, and this one looks easy.  Which planet is known as the red planet?  The answer is Mars.  It looks red because of iron oxide,  basically rust, covering its surface.  Question two, what is the largest ocean on earth?  The Pacific Ocean, it covers more area  than all of earth's land put together.  Question three, how many sides does a hexagon have?  Six, a hexagon has six sides and six angles.  Think of a honeycomb cell.  Question four, what is the chemical symbol for gold?  The letters and you, the symbol comes from orum,  the Latin word for gold.  Question five, the last one.  In what year did humans first land on the moon?  1969, Apollo 11 landed on July 20th, 1969.  That is your score out of five.  Got all five, then you are officially smarter than the average internet.  Follow for round two.",
+  "reference_words": 180,
+  "hypothesis_words": 175,
+  "wer": 0.06111111111111111,
+  "wer_edits": 11,
+  "words": [
+    {
+      "word": " Think",
+      "start": 0.0,
+      "end": 0.3
+    },
+    {
+      "word": " you",
+      "start": 0.3,
+      "end": 0.46
+    },
+    {
+      "word": " know",
+      "start": 0.46,
+      "end": 0.52
+    },
+    {
+      "word": " it",
+      "start": 0.52,
+      "end": 0.64
+    },
+    {
+      "word": " all,",
+      "start": 0.64,
+      "end": 1.22
+    },
+    {
+      "word": " five",
+      "start": 1.24,
+      "end": 1.56
+    },
+    {
+      "word": " questions.",
+      "start": 1.56,
+      "end": 2.12
+    },
+    {
+      "word": " No",
+      "start": 2.7,
+      "end": 2.94
+    },
+    {
+      "word": " Googling,",
+      "start": 2.94,
+      "end": 3.38
+    },
+    {
+      "word": " no",
+      "start": 3.48,
+      "end": 3.68
+    },
+    {
+      "word": " lifelines.",
+      "start": 3.68,
+      "end": 4.28
+    },
+    {
+      "word": " See",
+      "start": 4.94,
+      "end": 5.02
+    },
+    {
+      "word": " how",
+      "start": 5.02,
+      "end": 5.2
+    },
+    {
+      "word": " many",
+      "start": 5.2,
+      "end": 5.32
+    },
+    {
+      "word": " you",
+      "start": 5.32,
+      "end": 5.52
+    },
+    {
+      "word": " can",
+      "start": 5.52,
+      "end": 5.66
+    },
+    {
+      "word": " get",
+      "start": 5.66,
+      "end": 5.86
+    },
+    {
+      "word": " right",
+      "start": 5.86,
+      "end": 6.24
+    },
+    {
+      "word": " and",
+      "start": 6.24,
+      "end": 6.42
+    },
+    {
+      "word": " drop",
+      "start": 6.42,
+      "end": 6.62
+    },
+    {
+      "word": " your",
+      "start": 6.62,
+      "end": 6.9
+    },
+    {
+      "word": " score",
+      "start": 6.9,
+      "end": 7.1
+    },
+    {
+      "word": " in",
+      "start": 7.1,
+      "end": 7.26
+    },
+    {
+      "word": " the",
+      "start": 7.26,
+      "end": 7.48
+    },
+    {
+      "word": " comments",
+      "start": 7.48,
+      "end": 7.74
+    },
+    {
+      "word": " when",
+      "start": 7.74,
+      "end": 7.98
+    },
+    {
+      "word": " you",
+      "start": 7.98,
+      "end": 8.1
+    },
+    {
+      "word": " are",
+      "start": 8.1,
+      "end": 8.22
+    },
+    {
+      "word": " done.",
+      "start": 8.22,
+      "end": 8.62
+    },
+    {
+      "word": " Question",
+      "start": 9.24,
+      "end": 9.34
+    },
+    {
+      "word": " one,",
+      "start": 9.34,
+      "end": 9.86
+    },
+    {
+      "word": " and",
+      "start": 9.92,
+      "end": 10.08
+    },
+    {
+      "word": " this",
+      "start": 10.08,
+      "end": 10.26
+    },
+    {
+      "word": " one",
+      "start": 10.26,
+      "end": 10.38
+    },
+    {
+      "word": " looks",
+      "start": 10.38,
+      "end": 10.66
+    },
+    {
+      "word": " easy.",
+      "start": 10.66,
+      "end": 11.06
+    },
+    {
+      "word": " Which",
+      "start": 11.52,
+      "end": 11.78
+    },
+    {
+      "word": " planet",
+      "start": 11.78,
+      "end": 12.04
+    },
+    {
+      "word": " is",
+      "start": 12.04,
+      "end": 12.3
+    },
+    {
+      "word": " known",
+      "start": 12.3,
+      "end": 12.54
+    },
+    {
+      "word": " as",
+      "start": 12.54,
+      "end": 12.74
+    },
+    {
+      "word": " the",
+      "start": 12.74,
+      "end": 12.9
+    },
+    {
+      "word": " red",
+      "start": 12.9,
+      "end": 13.14
+    },
+    {
+      "word": " planet?",
+      "start": 13.14,
+      "end": 13.5
+    },
+    {
+      "word": " The",
+      "start": 19.060000000000002,
+      "end": 19.58
+    },
+    {
+      "word": " answer",
+      "start": 19.58,
+      "end": 19.88
+    },
+    {
+      "word": " is",
+      "start": 19.88,
+      "end": 20.22
+    },
+    {
+      "word": " Mars.",
+      "start": 20.22,
+      "end": 20.54
+    },
+    {
+      "word": " It",
+      "start": 20.98,
+      "end": 21.14
+    },
+    {
+      "word": " looks",
+      "start": 21.14,
+      "end": 21.4
+    },
+    {
+      "word": " red",
+      "start": 21.4,
+      "end": 21.64
+    },
+    {
+      "word": " because",
+      "start": 21.64,
+      "end": 21.9
+    },
+    {
+      "word": " of",
+      "start": 21.9,
+      "end": 22.12
+    },
+    {
+      "word": " iron",
+      "start": 22.12,
+      "end": 22.38
+    },
+    {
+      "word": " oxide,",
+      "start": 22.38,
+      "end": 22.92
+    },
+    {
+      "word": " basically",
+      "start": 23.34,
+      "end": 23.64
+    },
+    {
+      "word": " rust,",
+      "start": 23.64,
+      "end": 24.04
+    },
+    {
+      "word": " covering",
+      "start": 24.44,
+      "end": 24.46
+    },
+    {
+      "word": " its",
+      "start": 24.46,
+      "end": 24.76
+    },
+    {
+      "word": " surface.",
+      "start": 24.76,
+      "end": 25.18
+    },
+    {
+      "word": " Question",
+      "start": 25.94,
+      "end": 26.08
+    },
+    {
+      "word": " two,",
+      "start": 26.08,
+      "end": 26.58
+    },
+    {
+      "word": " what",
+      "start": 26.66,
+      "end": 26.98
+    },
+    {
+      "word": " is",
+      "start": 26.98,
+      "end": 27.16
+    },
+    {
+      "word": " the",
+      "start": 27.16,
+      "end": 27.4
+    },
+    {
+      "word": " largest",
+      "start": 27.4,
+      "end": 27.58
+    },
+    {
+      "word": " ocean",
+      "start": 27.58,
+      "end": 28.04
+    },
+    {
+      "word": " on",
+      "start": 28.04,
+      "end": 28.28
+    },
+    {
+      "word": " earth?",
+      "start": 28.28,
+      "end": 28.58
+    },
+    {
+      "word": " The",
+      "start": 33.88,
+      "end": 34.44
+    },
+    {
+      "word": " Pacific",
+      "start": 34.44,
+      "end": 34.84
+    },
+    {
+      "word": " Ocean,",
+      "start": 34.84,
+      "end": 35.4
+    },
+    {
+      "word": " it",
+      "start": 35.86,
+      "end": 35.98
+    },
+    {
+      "word": " covers",
+      "start": 35.98,
+      "end": 36.2
+    },
+    {
+      "word": " more",
+      "start": 36.2,
+      "end": 36.62
+    },
+    {
+      "word": " area",
+      "start": 36.62,
+      "end": 36.86
+    },
+    {
+      "word": " than",
+      "start": 36.86,
+      "end": 37.14
+    },
+    {
+      "word": " all",
+      "start": 37.14,
+      "end": 37.34
+    },
+    {
+      "word": " of",
+      "start": 37.34,
+      "end": 37.46
+    },
+    {
+      "word": " earth's",
+      "start": 37.46,
+      "end": 37.76
+    },
+    {
+      "word": " land",
+      "start": 37.76,
+      "end": 38.02
+    },
+    {
+      "word": " put",
+      "start": 38.02,
+      "end": 38.22
+    },
+    {
+      "word": " together.",
+      "start": 38.22,
+      "end": 38.74
+    },
+    {
+      "word": " Question",
+      "start": 39.4,
+      "end": 39.46
+    },
+    {
+      "word": " three,",
+      "start": 39.46,
+      "end": 40.04
+    },
+    {
+      "word": " how",
+      "start": 40.26,
+      "end": 40.38
+    },
+    {
+      "word": " many",
+      "start": 40.38,
+      "end": 40.6
+    },
+    {
+      "word": " sides",
+      "start": 40.6,
+      "end": 40.94
+    },
+    {
+      "word": " does",
+      "start": 40.94,
+      "end": 41.14
+    },
+    {
+      "word": " a",
+      "start": 41.14,
+      "end": 41.24
+    },
+    {
+      "word": " hexagon",
+      "start": 41.24,
+      "end": 41.62
+    },
+    {
+      "word": " have?",
+      "start": 41.62,
+      "end": 42.84
+    },
+    {
+      "word": " Six,",
+      "start": 47.760000000000005,
+      "end": 48.32
+    },
+    {
+      "word": " a",
+      "start": 48.7,
+      "end": 48.86
+    },
+    {
+      "word": " hexagon",
+      "start": 48.86,
+      "end": 49.24
+    },
+    {
+      "word": " has",
+      "start": 49.24,
+      "end": 49.48
+    },
+    {
+      "word": " six",
+      "start": 49.48,
+      "end": 49.72
+    },
+    {
+      "word": " sides",
+      "start": 49.72,
+      "end": 50.06
+    },
+    {
+      "word": " and",
+      "start": 50.06,
+      "end": 50.32
+    },
+    {
+      "word": " six",
+      "start": 50.32,
+      "end": 50.56
+    },
+    {
+      "word": " angles.",
+      "start": 50.56,
+      "end": 50.94
+    },
+    {
+      "word": " Think",
+      "start": 51.54,
+      "end": 51.56
+    },
+    {
+      "word": " of",
+      "start": 51.56,
+      "end": 51.72
+    },
+    {
+      "word": " a",
+      "start": 51.72,
+      "end": 51.96
+    },
+    {
+      "word": " honeycomb",
+      "start": 51.96,
+      "end": 52.24
+    },
+    {
+      "word": " cell.",
+      "start": 52.24,
+      "end": 52.62
+    },
+    {
+      "word": " Question",
+      "start": 53.3,
+      "end": 53.46
+    },
+    {
+      "word": " four,",
+      "start": 53.46,
+      "end": 53.96
+    },
+    {
+      "word": " what",
+      "start": 54.16,
+      "end": 54.42
+    },
+    {
+      "word": " is",
+      "start": 54.42,
+      "end": 54.6
+    },
+    {
+      "word": " the",
+      "start": 54.6,
+      "end": 54.84
+    },
+    {
+      "word": " chemical",
+      "start": 54.84,
+      "end": 55.1
+    },
+    {
+      "word": " symbol",
+      "start": 55.1,
+      "end": 55.42
+    },
+    {
+      "word": " for",
+      "start": 55.42,
+      "end": 55.72
+    },
+    {
+      "word": " gold?",
+      "start": 55.72,
+      "end": 56.12
+    },
+    {
+      "word": " The",
+      "start": 61.599999999999994,
+      "end": 62.12
+    },
+    {
+      "word": " letters",
+      "start": 62.12,
+      "end": 62.36
+    },
+    {
+      "word": " and",
+      "start": 62.36,
+      "end": 62.9
+    },
+    {
+      "word": " you,",
+      "start": 62.9,
+      "end": 63.36
+    },
+    {
+      "word": " the",
+      "start": 63.7,
+      "end": 63.82
+    },
+    {
+      "word": " symbol",
+      "start": 63.82,
+      "end": 64.08
+    },
+    {
+      "word": " comes",
+      "start": 64.08,
+      "end": 64.42
+    },
+    {
+      "word": " from",
+      "start": 64.42,
+      "end": 64.7
+    },
+    {
+      "word": " orum,",
+      "start": 64.7,
+      "end": 65.1
+    },
+    {
+      "word": " the",
+      "start": 65.36,
+      "end": 65.46
+    },
+    {
+      "word": " Latin",
+      "start": 65.46,
+      "end": 65.78
+    },
+    {
+      "word": " word",
+      "start": 65.78,
+      "end": 66.04
+    },
+    {
+      "word": " for",
+      "start": 66.04,
+      "end": 66.24
+    },
+    {
+      "word": " gold.",
+      "start": 66.24,
+      "end": 66.76
+    },
+    {
+      "word": " Question",
+      "start": 67.44,
+      "end": 67.44
+    },
+    {
+      "word": " five,",
+      "start": 67.44,
+      "end": 68.06
+    },
+    {
+      "word": " the",
+      "start": 68.08,
+      "end": 68.22
+    },
+    {
+      "word": " last",
+      "start": 68.22,
+      "end": 68.52
+    },
+    {
+      "word": " one.",
+      "start": 68.52,
+      "end": 68.96
+    },
+    {
+      "word": " In",
+      "start": 69.28,
+      "end": 69.34
+    },
+    {
+      "word": " what",
+      "start": 69.34,
+      "end": 69.56
+    },
+    {
+      "word": " year",
+      "start": 69.56,
+      "end": 69.78
+    },
+    {
+      "word": " did",
+      "start": 69.78,
+      "end": 70.02
+    },
+    {
+      "word": " humans",
+      "start": 70.02,
+      "end": 70.22
+    },
+    {
+      "word": " first",
+      "start": 70.22,
+      "end": 70.68
+    },
+    {
+      "word": " land",
+      "start": 70.68,
+      "end": 70.9
+    },
+    {
+      "word": " on",
+      "start": 70.9,
+      "end": 71.1
+    },
+    {
+      "word": " the",
+      "start": 71.1,
+      "end": 72.38
+    },
+    {
+      "word": " moon?",
+      "start": 72.38,
+      "end": 72.38
+    },
+    {
+      "word": " 1969,",
+      "start": 77.78,
+      "end": 78.3
+    },
+    {
+      "word": " Apollo",
+      "start": 79.12,
+      "end": 79.46
+    },
+    {
+      "word": " 11",
+      "start": 79.46,
+      "end": 79.96
+    },
+    {
+      "word": " landed",
+      "start": 79.96,
+      "end": 80.28
+    },
+    {
+      "word": " on",
+      "start": 80.28,
+      "end": 80.56
+    },
+    {
+      "word": " July",
+      "start": 80.56,
+      "end": 80.8
+    },
+    {
+      "word": " 20th,",
+      "start": 80.8,
+      "end": 82.04
+    },
+    {
+      "word": " 1969.",
+      "start": 82.38,
+      "end": 82.42
+    },
+    {
+      "word": " That",
+      "start": 83.28,
+      "end": 83.44
+    },
+    {
+      "word": " is",
+      "start": 83.44,
+      "end": 83.6
+    },
+    {
+      "word": " your",
+      "start": 83.6,
+      "end": 83.84
+    },
+    {
+      "word": " score",
+      "start": 83.84,
+      "end": 84.06
+    },
+    {
+      "word": " out",
+      "start": 84.06,
+      "end": 84.26
+    },
+    {
+      "word": " of",
+      "start": 84.26,
+      "end": 84.4
+    },
+    {
+      "word": " five.",
+      "start": 84.4,
+      "end": 84.82
+    },
+    {
+      "word": " Got",
+      "start": 85.0,
+      "end": 85.16
+    },
+    {
+      "word": " all",
+      "start": 85.16,
+      "end": 85.38
+    },
+    {
+      "word": " five,",
+      "start": 85.38,
+      "end": 85.88
+    },
+    {
+      "word": " then",
+      "start": 86.1,
+      "end": 86.36
+    },
+    {
+      "word": " you",
+      "start": 86.36,
+      "end": 86.48
+    },
+    {
+      "word": " are",
+      "start": 86.48,
+      "end": 86.66
+    },
+    {
+      "word": " officially",
+      "start": 86.66,
+      "end": 87.08
+    },
+    {
+      "word": " smarter",
+      "start": 87.08,
+      "end": 87.44
+    },
+    {
+      "word": " than",
+      "start": 87.44,
+      "end": 87.68
+    },
+    {
+      "word": " the",
+      "start": 87.68,
+      "end": 87.9
+    },
+    {
+      "word": " average",
+      "start": 87.9,
+      "end": 88.18
+    },
+    {
+      "word": " internet.",
+      "start": 88.18,
+      "end": 88.74
+    },
+    {
+      "word": " Follow",
+      "start": 88.74,
+      "end": 89.5
+    },
+    {
+      "word": " for",
+      "start": 89.5,
+      "end": 89.76
+    },
+    {
+      "word": " round",
+      "start": 89.76,
+      "end": 89.98
+    },
+    {
+      "word": " two.",
+      "start": 89.98,
+      "end": 90.2
+    }
+  ],
+  "peak_rss_mb": 307.63671875
+}
