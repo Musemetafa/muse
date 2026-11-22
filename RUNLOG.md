@@ -90,3 +90,16 @@ for the next run. Newest at the bottom.
   silence. Fair comparison method written in prototype-1/REPORT.md.
   Next: Mohamed's evaluation; audience-test route needs his assignment
   (Muse does not publish to TikTok).
+- 2026-11-22 ~14:41 UTC — Mohamed corrected the framing: fixing the two
+  prototype videos is NOT the goal. The safe zone and icons/animation
+  are deeper — permanent factory capabilities. Work redirected: build a
+  safe-zone layout system with an automated check + an original
+  icon/micro-animation library as reusable components; re-render the
+  prototypes with them only as the first proof.
+- 2026-11-22 ~15:07 UTC — Factory design rules DONE, both PASS: safe-zone
+  layout system + automated checker (factory/layout.py) and original
+  icon/micro-animation library (factory/icons.py) built as permanent
+  components; DESIGN_RULES.md written. Proof: both prototypes re-rendered
+  as v2 (trivia 90.41 s, riddle 92.29 s), checker PASS on all frames,
+  byte-identical reruns. The checker caught 3 real defects eyeballing
+  missed. Next: Mohamed's evaluation of the v2 videos.

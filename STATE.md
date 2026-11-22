@@ -1,6 +1,6 @@
 # Factory State
 
-Live operating state. Updated by every run. Last updated: 2026-11-22 ~14:15 UTC.
+Live operating state. Updated by every run. Last updated: 2026-11-22 ~15:07 UTC.
 
 ## Highest goal
 
@@ -55,6 +55,17 @@ independence from Mohamed's daily involvement. Zero spend in this stage.
   "aurum"→"orum", "wetter"→"better", "An echo"→"In echo". Fair
   comparison method written in prototype-1/REPORT.md; no winner
   declared — needs real audience data.
+- **Factory design rules — DONE, both PASS.** Built 2026-11-22 ~15:07
+  UTC (`factory/`): safe-zone layout system (layout.py: TikTok template
+  constants, named zones, automated checker on every frame's text
+  boxes) + original code-drawn icon/micro-animation library (icons.py:
+  9 icons, 5 motion primitives) + DESIGN_RULES.md. Proof: both
+  prototypes re-rendered as v2 with the new system (trivia 90.41 s,
+  riddle 92.29 s; checker PASS on all 2713/2769 frames, 0 failed;
+  byte-identical reruns; no black/frozen/silence). The checker caught
+  3 real defects eyeballing had missed (incl. a font-size-dependent
+  width bug and a 6 px stack overflow). Narration reused from v1
+  (af_heart provisional).
   (`research/niche-discovery-2026-11-22.md`, synthesis of three reports:
   `niche-demand-2026-11-22.md`, `niche-formats-stack-fit-2026-11-22.md`,
   `niche-commercial-2026-11-22.md`). Ranked shortlist against the six
@@ -68,10 +79,11 @@ independence from Mohamed's daily involvement. Zero spend in this stage.
 
 ## In progress
 
-- **Mohamed's evaluation of the two prototypes.** He watches/listens to
-  the trivia and riddle videos, judges voice naturalness (af_heart vs
-  am_adam), visual appeal, and which format he prefers. No loop work
-  depends on his answer before the next scheduled run.
+- **Mohamed's evaluation of the v2 prototypes.** He watches/listens to
+  the trivia and riddle v2 videos, judges voice naturalness (af_heart
+  vs am_adam), whether the icons and safe-zone layout read better, and
+  which format he prefers. No loop work depends on his answer before
+  the next scheduled run.
 
 ## Decisions (with evidence)
 
@@ -147,11 +159,14 @@ independence from Mohamed's daily involvement. Zero spend in this stage.
 
 ## Next step
 
-1. Mohamed evaluates the two prototype videos (voice, visuals, format
+1. Build the safe-zone layout system + icon/micro-animation library as
+   factory components (in `factory/`), document them as design rules,
+   and re-render both prototypes with them as the first proof.
+2. Mohamed evaluates the two prototype videos (voice, visuals, format
    preference). Then decide the audience-test route: the TikTok account
    is managed by the other agent and Muse does not publish — publishing
    a test needs Mohamed's explicit assignment for that task.
-2. If he picks am_adam, re-synthesize narration and re-render both
+3. If he picks am_adam, re-synthesize narration and re-render both
    videos with that voice (~2 min synthesis + ~70 s render per video).
 
 ## Next step criteria (for the prototype videos)
