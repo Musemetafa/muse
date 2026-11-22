@@ -1,6 +1,6 @@
 # Factory State
 
-Live operating state. Updated by every run. Last updated: 2026-11-22 ~02:30 UTC.
+Live operating state. Updated by every run. Last updated: 2026-11-22 ~02:43 UTC.
 
 ## Highest goal
 
@@ -20,18 +20,25 @@ independence from Mohamed's daily involvement. Zero spend in this stage.
   Proves assembly only, not motion or audience appeal.
 - 2026-11-22: Repository `Musemetafa/muse` created, app installed, first
   snapshot pushed (commit `e8c71405`). Read and write access verified.
+- 2026-11-22: Deep inspection of OpenFilm, Kokoro-82M, faster-whisper
+  (`research/deep-inspection-openfilm-kokoro-whisper-2026-11-22.md`).
+  OpenFilm: INTEGRATE conditionally (MIT verified; render unproven).
+  Kokoro-82M: ADOPT via kokoro-onnx (Apache-2.0 verified; RTF 2.67, slower
+  than real time; naturalness needs a listening test). faster-whisper:
+  ADOPT as-is, tiny.en default (RTF 0.20, 279 MB; pin av==12.3.0).
+  Voice-to-verify pipeline proven end-to-end on CPU; video render not proven.
 - 2026-11-22: Self-running operations designed (`OPERATIONS.md`) and goal
   `مصنع الفيديو` created as the loop's owner. Cron loop being set up.
 
 ## In progress
 
-- **Deep inspection of OpenFilm, Kokoro-82M, faster-whisper.**
-  Started 2026-11-22 ~02:30 UTC, delegated to a research worker.
-  Deliverable: `research/deep-inspection-openfilm-kokoro-whisper-2026-11-22.md`.
-  Must verify from primary sources: licenses (code and weights), commercial
-  use in the US, real hardware needs on 1.5 CPU / 6 GiB, Kokoro US-voice
-  naturalness and verified weight source, faster-whisper small/tiny memory
-  fit alongside a renderer. No adoption decision yet.
+- **OpenFilm render test — waiting on Mohamed's approval.** The inspection
+  proved the voice-to-verify pipeline but not the video render. Running
+  `npm install` + a Chromium download from the cloned OpenFilm code needs
+  his explicit go-ahead (execution-risk check on cloned code).
+- **Factory Test 2 — motion test, ready to run.** Add simple code-computed
+  motion inside a scene with the proven Python/Pillow/FFmpeg tools and
+  re-measure determinism and checks. No new approval needed.
 
 ## Decisions (with evidence)
 
@@ -45,8 +52,21 @@ independence from Mohamed's daily involvement. Zero spend in this stage.
   and all decisions for factory work. Boundaries that remain: no spending,
   no financial/legal commitments, no publishing or sharing private data, no
   irreversible changes, except on a clear assignment for each task.
-- GitHub identity: account `Musemetafa`, linked to a different Gmail than
-  Mohamed's main one; he said that is not a problem.
+- Kokoro-82M: ADOPT as the voice layer via kokoro-onnx. Apache-2.0 weights
+  verified (Hugging Face API, 13.25M downloads, not gated); synthesis
+  measured on this VM: 12.68 s of US-English audio in 33.8 s (RTF 2.67,
+  peak RSS 665 MB), transcribed back with WER 0.000. Caveats: slower than
+  real time (contradicts a secondary "6x faster" claim); naturalness still
+  needs a blind listening test.
+- faster-whisper: ADOPT AS-IS for captions and the verification loop,
+  tiny.en by default. MIT code verified; measured tiny.en RTF 0.20,
+  WER 0.000, 42/42 words timestamped, 279 MB; small.en RTF 1.06, 983 MB.
+  Install recipe must pin av==12.3.0 (pip's PyAV 19.0.2 breaks decoding).
+- OpenFilm: INTEGRATE conditionally as the render/edit layer (CLI +
+  film.html / frame(t) format; do not fork; do not use the OpenFilm name
+  or logo — trademark is separate from the MIT code licence). Render path
+  plausible by design (its own code throttles to 1 browser on this VM) but
+  UNPROVEN by test; the render test needs Mohamed's approval.
 
 ## Evidence pointers
 
@@ -57,12 +77,15 @@ independence from Mohamed's daily involvement. Zero spend in this stage.
 
 ## Blockers
 
-- None open. Previous blocker (GitHub App not installed on the repo, push
-  rejected 403) was resolved by Mohamed installing the app and selecting
-  the repo; the retry push succeeded and was verified.
+- Open: OpenFilm render test needs Mohamed's approval (`npm install` +
+  Chromium download from cloned code; execution-risk check). Asked
+  2026-11-22 ~02:43 UTC.
+- Resolved: GitHub App not installed on the repo (push rejected 403) —
+  fixed by Mohamed installing the app and selecting the repo; retry push
+  succeeded and was verified.
 - Watch: GitHub writes ask for approval on every call; no standing approval
   exists. Background pushes may stall on approval. To be measured by the
-  test run.
+  test run at 03:00 UTC.
 
 ## Known limits
 
@@ -73,12 +96,14 @@ independence from Mohamed's daily involvement. Zero spend in this stage.
 
 ## Next step
 
-1. Finish the deep inspection of OpenFilm, Kokoro-82M, faster-whisper;
-   record a documented recommendation (adopt / modify / integrate / reject
-   each, with reasons, risks, alternatives).
-2. Then: Factory Test 2 — add simple code-computed motion inside a scene,
-   re-measure determinism and automated checks (stated after Test 1, not
-   yet executed).
+1. OpenFilm render test (pending Mohamed's approval): `npm install` +
+   Chromium download + minimal `openfilm render --workers 1`. Passes if:
+   install succeeds, Chromium downloads, a minimal film renders to a
+   720x1280 video with correct duration, no black/frozen frames, and the
+   render time is documented.
+2. Factory Test 2 — add simple code-computed motion inside a scene,
+   re-measure determinism and automated checks (no approval needed; the
+   03:00 loop run picks it up if it has not started sooner).
 3. Then: opportunity/niche discovery against the six evidence criteria,
    with experimental prototypes and comparison — no success numbers set
    before studying the data.
