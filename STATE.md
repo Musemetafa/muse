@@ -1,6 +1,6 @@
 # Factory State
 
-Live operating state. Updated by every run. Last updated: 2026-11-22 ~15:28 UTC.
+Live operating state. Updated by every run. Last updated: 2026-11-22 ~15:34 UTC.
 
 ## Highest goal
 
@@ -79,7 +79,19 @@ independence from Mohamed's daily involvement. Zero spend in this stage.
 
 ## In progress
 
-- **Real-market experiment system — DONE.** Built 2026-11-22 ~15:28 UTC:
+- **Professional learning program — Module 1 DONE.** Built 2026-11-22
+  ~15:34 UTC: `factory/LEARNING.md` (curriculum: honest starting
+  level NONE in all 10 domains, level scale NONE → LEARNING → TESTED
+  → PROVEN → RULE, 4-tier source discipline, learning loop, 10-module
+  queue) + `research/tiktok-mastery-1-2026-11-22.md` (TikTok mechanics,
+  discovery, SEO, policies, monetization — from TikTok's own pages,
+  claims tagged official / practitioner / unproven). Key confirmed
+  facts: follower count is NOT a direct For You factor; finishing a
+  longer video is the strongest signal TikTok names; search value is a
+  paid metric in the Creator Rewards formula. Rules adopted: completion
+  stays a deciding metric, AI-generated label mandatory on every video,
+  60-second minimum stands, no volume strategy. Next module: M2
+  retention science + hooks, in the loop queue.
   `factory/EXPERIMENTS.md` (hypothesis format with falsifier, 7-stage
   lifecycle, metrics + baselines, kill switch, honesty rules, 1
   video/day cadence) + `factory/EXPERIMENT_LOG.md` (empty, ready) +
@@ -171,7 +183,9 @@ independence from Mohamed's daily involvement. Zero spend in this stage.
 
 ## Next step
 
-1. When Mohamed hands over the dedicated TikTok account, verify access
+1. Next learning module in the loop: M2 retention science + hooks
+   (factory/LEARNING.md queue).
+2. When Mohamed hands over the dedicated TikTok account, verify access
    and publish the v2 prototypes as the first experiments (EXP-001
    trivia vs EXP-002 riddles), by the manual path first. Record the
    monetization status truthfully from TikTok Studio — currently
@@ -200,6 +214,26 @@ independence from Mohamed's daily involvement. Zero spend in this stage.
   factory does, within the standing boundaries (zero spend, content
   boundaries, no private-data sharing, no irreversible changes except
   on a clear assignment).
+
+## Professional expertise (standing rule, 2026-11-22)
+
+- The factory has NO proven professional expertise yet in TikTok, SEO,
+  audience understanding, or competitive content creation. It must not
+  claim skills it has not earned, and must not manage the account on
+  a strategy built from incomplete knowledge.
+- First responsibility: become a professional, continuously, with no
+  ceiling — TikTok mechanics/discovery/policies/monetization, TikTok
+  SEO, Google SEO for video, US audience study, retention science,
+  hooks of all kinds, brand/identity, storytelling and craft, and any
+  further field the work reveals as necessary.
+- Source discipline: distinguish official confirmed information from
+  experiments, inferences, and unproven claims; update knowledge when
+  platforms change; never present an unproven claim as a rule; never
+  copy a famous creator's style or follow a ready-made recipe.
+- Learning and experimenting go together: do not wait for claimed
+  mastery, and do not treat first experiments as proof of expertise.
+  Use results to correct knowledge; turn what is learned into
+  permanent factory capabilities.
 
 ## Next step criteria (for the prototype videos)
 

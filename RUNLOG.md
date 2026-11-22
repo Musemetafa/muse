@@ -118,3 +118,21 @@ for the next run. Newest at the bottom.
   Analytics: Display API for counts, TikTok Studio (human read) for
   completion/monetization. EXP-001 trivia vs EXP-002 riddles defined.
   Waiting on Mohamed's handover of the dedicated account.
+- 2026-11-22 ~15:30 UTC — Correction from Mohamed: the factory has NO
+  proven professional expertise yet in TikTok, SEO, audience
+  understanding, or competitive content creation, and must not pretend
+  otherwise or manage the account on incomplete knowledge. First
+  responsibility is becoming a professional, with no ceiling. Learning
+  program being built (curriculum + Module 1: TikTok mechanics, SEO,
+  policies, monetization from the latest official sources), with source
+  discipline and a learning loop that turns knowledge into capabilities.
+- 2026-11-22 ~15:34 UTC — Learning program Module 1 DONE:
+  factory/LEARNING.md (curriculum, level NONE in all 10 domains,
+  source discipline, 10-module queue) and
+  research/tiktok-mastery-1-2026-11-22.md (TikTok mechanics, discovery,
+  SEO, policies, monetization from TikTok's own pages; claims tagged
+  official/practitioner/unproven). Confirmed: followers are not a
+  direct For You factor; finishing a longer video is the strongest
+  named signal; search value is a paid metric. Rules adopted:
+  completion deciding, AI label mandatory, 60 s minimum, no volume
+  strategy. Next: M2 retention science + hooks.
