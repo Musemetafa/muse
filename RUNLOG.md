@@ -103,3 +103,18 @@ for the next run. Newest at the bottom.
   as v2 (trivia 90.41 s, riddle 92.29 s), checker PASS on all frames,
   byte-identical reruns. The checker caught 3 real defects eyeballing
   missed. Next: Mohamed's evaluation of the v2 videos.
+- 2026-11-22 ~15:22 UTC — New phase from Mohamed: a dedicated TikTok
+  account will be the factory's real testing ground, run as a commercial
+  monetized project (audience + sustainable income, not views alone).
+  Experiment system being prepared before it arrives (protocol +
+  TikTok connection research). Standing rule recorded: monetization
+  status is stated truthfully — currently NO account exists, status
+  UNKNOWN; never claim monetization or revenue without evidence.
+- 2026-11-22 ~15:28 UTC — Experiment system DONE: factory/EXPERIMENTS.md
+  (protocol + log format) and research/tiktok-connection-2026-11-22.md
+  (legitimate connection options, cited). Manual publishing recommended
+  first; API Upload (draft) in parallel; Direct Post likely to fail
+  TikTok's intended-use audit for a single-account internal tool.
+  Analytics: Display API for counts, TikTok Studio (human read) for
+  completion/monetization. EXP-001 trivia vs EXP-002 riddles defined.
+  Waiting on Mohamed's handover of the dedicated account.

@@ -1,6 +1,6 @@
 # Factory State
 
-Live operating state. Updated by every run. Last updated: 2026-11-22 ~15:07 UTC.
+Live operating state. Updated by every run. Last updated: 2026-11-22 ~15:28 UTC.
 
 ## Highest goal
 
@@ -79,6 +79,18 @@ independence from Mohamed's daily involvement. Zero spend in this stage.
 
 ## In progress
 
+- **Real-market experiment system — DONE.** Built 2026-11-22 ~15:28 UTC:
+  `factory/EXPERIMENTS.md` (hypothesis format with falsifier, 7-stage
+  lifecycle, metrics + baselines, kill switch, honesty rules, 1
+  video/day cadence) + `factory/EXPERIMENT_LOG.md` (empty, ready) +
+  `research/tiktok-connection-2026-11-22.md` (legitimate connection
+  options, all claims cited). Recommended path: manual publishing from
+  day one; Content Posting API in Upload (draft) mode in parallel;
+  Direct Post as a bonus that will likely fail TikTok's intended-use
+  audit for a single-account internal tool. Analytics: Display API for
+  counts; TikTok Studio, read by a human, permanently for completion
+  rate, watch time, traffic, and monetization status. First
+  experiments defined: EXP-001 trivia vs EXP-002 riddles.
 - **Mohamed's evaluation of the v2 prototypes.** He watches/listens to
   the trivia and riddle v2 videos, judges voice naturalness (af_heart
   vs am_adam), whether the icons and safe-zone layout read better, and
@@ -159,15 +171,35 @@ independence from Mohamed's daily involvement. Zero spend in this stage.
 
 ## Next step
 
-1. Build the safe-zone layout system + icon/micro-animation library as
-   factory components (in `factory/`), document them as design rules,
-   and re-render both prototypes with them as the first proof.
+1. When Mohamed hands over the dedicated TikTok account, verify access
+   and publish the v2 prototypes as the first experiments (EXP-001
+   trivia vs EXP-002 riddles), by the manual path first. Record the
+   monetization status truthfully from TikTok Studio — currently
+   UNKNOWN, no account exists yet.
 2. Mohamed evaluates the two prototype videos (voice, visuals, format
    preference). Then decide the audience-test route: the TikTok account
    is managed by the other agent and Muse does not publish — publishing
    a test needs Mohamed's explicit assignment for that task.
 3. If he picks am_adam, re-synthesize narration and re-render both
    videos with that voice (~2 min synthesis + ~70 s render per video).
+
+## Commercial discipline (standing rule, 2026-11-22)
+
+- The dedicated TikTok account is a real commercial project: every
+  decision serves building a real audience and sustainable income, not
+  views alone. Experiments test ideas, niches, storytelling, visuals,
+  motion, icons, voice, editing, and hooks; every experiment produces
+  reusable knowledge for the next one.
+- No successful style is final; keep searching for better performance
+  without sacrificing the stability of what works.
+- Monetization status is recorded truthfully and only from evidence.
+  Current status: NO dedicated account exists yet — status UNKNOWN.
+  Never claim the account is monetized and never record revenue that
+  has not actually happened.
+- Mohamed decides niche, style, tools, and test method no longer — the
+  factory does, within the standing boundaries (zero spend, content
+  boundaries, no private-data sharing, no irreversible changes except
+  on a clear assignment).
 
 ## Next step criteria (for the prototype videos)
 
