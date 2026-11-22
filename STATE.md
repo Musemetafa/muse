@@ -1,6 +1,6 @@
 # Factory State
 
-Live operating state. Updated by every run. Last updated: 2026-11-22 ~15:34 UTC.
+Live operating state. Updated by every run. Last updated: 2026-11-22 ~15:43 UTC.
 
 ## Highest goal
 
@@ -76,22 +76,7 @@ independence from Mohamed's daily involvement. Zero spend in this stage.
   prototype 60+ s with narration + motion + captions (text-only is
   excluded from Creator Rewards as "not original"). No RPM-based revenue
   forecast — TikTok publishes no rate.
-
-## In progress
-
-- **Professional learning program — Module 1 DONE.** Built 2026-11-22
-  ~15:34 UTC: `factory/LEARNING.md` (curriculum: honest starting
-  level NONE in all 10 domains, level scale NONE → LEARNING → TESTED
-  → PROVEN → RULE, 4-tier source discipline, learning loop, 10-module
-  queue) + `research/tiktok-mastery-1-2026-11-22.md` (TikTok mechanics,
-  discovery, SEO, policies, monetization — from TikTok's own pages,
-  claims tagged official / practitioner / unproven). Key confirmed
-  facts: follower count is NOT a direct For You factor; finishing a
-  longer video is the strongest signal TikTok names; search value is a
-  paid metric in the Creator Rewards formula. Rules adopted: completion
-  stays a deciding metric, AI-generated label mandatory on every video,
-  60-second minimum stands, no volume strategy. Next module: M2
-  retention science + hooks, in the loop queue.
+- **Real-market experiment system — DONE.** Built 2026-11-22 ~15:28 UTC:
   `factory/EXPERIMENTS.md` (hypothesis format with falsifier, 7-stage
   lifecycle, metrics + baselines, kill switch, honesty rules, 1
   video/day cadence) + `factory/EXPERIMENT_LOG.md` (empty, ready) +
@@ -103,6 +88,36 @@ independence from Mohamed's daily involvement. Zero spend in this stage.
   counts; TikTok Studio, read by a human, permanently for completion
   rate, watch time, traffic, and monetization status. First
   experiments defined: EXP-001 trivia vs EXP-002 riddles.
+- **Professional learning program — Module 1 DONE.** Built 2026-11-22
+  ~15:34 UTC: `factory/LEARNING.md` (curriculum: honest starting
+  level NONE in all 10 domains, level scale NONE → LEARNING → TESTED
+  → PROVEN → RULE, 4-tier source discipline, learning loop, 10-module
+  queue) + `research/tiktok-mastery-1-2026-11-22.md` (TikTok mechanics,
+  discovery, SEO, policies, monetization — from TikTok's own pages,
+  claims tagged official / practitioner / unproven). Key confirmed
+  facts: follower count is NOT a direct For You factor; finishing a
+  longer video is the strongest signal TikTok names; search value is a
+  paid metric in the Creator Rewards formula. Rules adopted: completion
+  stays a deciding metric, AI-generated label mandatory on every video,
+  60-second minimum stands, no volume strategy.
+
+## In progress
+
+- **Learning program — RESTRUCTURED into open discovery, DONE.**
+  2026-11-22 ~15:43 UTC: `factory/LEARNING.md` revised (354 → 825
+  lines): the open-ended principle at the top (listed domains are a
+  floor, not a ceiling), a permanent discovery protocol (scheduled
+  horizon scans after every two modules, at least monthly; triggered
+  scans; cross-domain linking; unfamiliar-idea probes; re-audit
+  triggers), an open revisable queue, and a discovered-domains log.
+  First horizon scan: `research/discovery-scan-1-2026-11-22.md` (13
+  candidates). Queue grew 10 → 17 domains/modules (D11 curiosity-gap
+  & retrieval science → M3; D12 gamification & habit → M4; D13
+  follow/share psychology → M9; D14 sound design & loudness → M10;
+  D17 cross-platform distribution → M13; D15 community → M16; D16
+  monetisation ladder → M17). New domains sit at level NONE —
+  hypotheses, not knowledge. Next module: M2 retention science +
+  hooks.
 - **Mohamed's evaluation of the v2 prototypes.** He watches/listens to
   the trivia and riddle v2 videos, judges voice naturalness (af_heart
   vs am_adam), whether the icons and safe-zone layout read better, and
@@ -184,7 +199,7 @@ independence from Mohamed's daily involvement. Zero spend in this stage.
 ## Next step
 
 1. Next learning module in the loop: M2 retention science + hooks
-   (factory/LEARNING.md queue).
+   (factory/LEARNING.md queue, now 17 modules).
 2. When Mohamed hands over the dedicated TikTok account, verify access
    and publish the v2 prototypes as the first experiments (EXP-001
    trivia vs EXP-002 riddles), by the manual path first. Record the
@@ -214,6 +229,11 @@ independence from Mohamed's daily involvement. Zero spend in this stage.
   factory does, within the standing boundaries (zero spend, content
   boundaries, no private-data sharing, no irreversible changes except
   on a clear assignment).
+- **Series/Rewards conflict (from Scan 1, practitioner-checked, to be
+  re-verified against TikTok's official pages before any Series
+  decision):** videos linked to a paid TikTok Series do not earn
+  Creator Rewards. A future premium product must not silently
+  cannibalise the main income stream.
 
 ## Professional expertise (standing rule, 2026-11-22)
 
@@ -226,6 +246,16 @@ independence from Mohamed's daily involvement. Zero spend in this stage.
   SEO, Google SEO for video, US audience study, retention science,
   hooks of all kinds, brand/identity, storytelling and craft, and any
   further field the work reveals as necessary.
+- The listed domains are a starting point, not a map and not a
+  boundary. The factory's responsibility is to discover the field in
+  the widest possible picture, including capabilities, techniques, and
+  opportunities that never occurred to us and that we may not know
+  exist. It must discover what it does not know by itself, connect
+  domains, test unfamiliar ideas, and continuously re-check whether
+  its current conceptions are incomplete or overtaken. No style,
+  school, recipe, or ready-made strategy bounds it, and the learning
+  program itself must be able to rediscover, expand, and develop
+  itself.
 - Source discipline: distinguish official confirmed information from
   experiments, inferences, and unproven claims; update knowledge when
   platforms change; never present an unproven claim as a rule; never

@@ -136,3 +136,20 @@ for the next run. Newest at the bottom.
   named signal; search value is a paid metric. Rules adopted:
   completion deciding, AI label mandatory, 60 s minimum, no volume
   strategy. Next: M2 retention science + hooks.
+- 2026-11-22 ~15:38 UTC — Second correction from Mohamed: the listed
+  domains are a starting point only, not a map and not a boundary. The
+  learning program must be self-expanding — able to rediscover itself,
+  with a permanent discovery protocol (horizon scanning, cross-domain
+  linking, unfamiliar-idea probes, re-audit triggers) and a discovered-
+  domains log. No list or guidance is a ceiling. Restructuring
+  LEARNING.md and running the first horizon scan beyond the 10 domains.
+- 2026-11-22 ~15:43 UTC — Learning program RESTRUCTURED into open
+  discovery (LEARNING.md 354 → 825 lines): open-ended principle,
+  discovery protocol, open queue, discovered-domains log. Scan 1
+  (research/discovery-scan-1-2026-11-22.md, 13 candidates) grew the
+  queue 10 → 17 modules. Surprises: curiosity can hurt nearby memory
+  (2024 npj study — post-reveal dead zone); the factory has no audio
+  layer (fix: −14 LUFS spec, FFmpeg ebur128 check, free CC0 SFX);
+  Series-linked videos do not earn Creator Rewards (adopted
+  constraint, to re-verify officially). New domains at NONE —
+  hypotheses, not knowledge. Next: M2 retention + hooks.
