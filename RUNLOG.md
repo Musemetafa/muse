@@ -60,3 +60,19 @@ for the next run. Newest at the bottom.
   as blocker "push pending approval" in STATE.md. All Test 2 evidence
   is saved locally in ~/workspace/muse-repo/; next run retries the
   push from the saved manifest.
+- 2026-11-22 ~11:25 UTC — Repair: the Factory Test 2 push that the 07:45
+  loop run could not land (push-files interrupted by a service restart)
+  was retried from the saved manifest and landed as e9017a06 (approved
+  during the call; verified by reading the remote repo). Blocker cleared.
+  Next: opportunity/niche discovery at the 13:45 UTC run.
+- 2026-11-22 ~13:50 UTC — Loop run (video-factory-loop, scheduled
+  13:45). Niche discovery desk research DONE (three delegated reports:
+  demand evidence, stack fit with 10 ideas per format, commercial
+  viability/policy — all cited, no invented numbers). Ranked shortlist
+  synthesized in research/niche-discovery-2026-11-22.md: prototype
+  trivia/quiz and riddles/puzzles first; facts and explainers second
+  wave; motivational and storytime out. Design rule: every prototype
+  60+ s with narration + motion + captions (Creator Rewards excludes
+  text-only). Next: build the first prototype videos + define the fair
+  comparison method before any success judgement. Push outcome recorded
+  below.

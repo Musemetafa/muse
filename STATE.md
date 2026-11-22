@@ -1,6 +1,6 @@
 # Factory State
 
-Live operating state. Updated by every run. Last updated: 2026-11-22 ~07:50 UTC.
+Live operating state. Updated by every run. Last updated: 2026-11-22 ~13:50 UTC.
 
 ## Highest goal
 
@@ -44,13 +44,25 @@ independence from Mohamed's daily involvement. Zero spend in this stage.
   consecutive pairs in scene 3). Render ~5.5 s from workspace disk.
   Lesson: /tmp was wiped mid-run — evidence must be written to
   ~/workspace immediately, never left in /tmp between steps.
+- 2026-11-22: Niche discovery, desk research phase DONE
+  (`research/niche-discovery-2026-11-22.md`, synthesis of three reports:
+  `niche-demand-2026-11-22.md`, `niche-formats-stack-fit-2026-11-22.md`,
+  `niche-commercial-2026-11-22.md`). Ranked shortlist against the six
+  criteria: (1) trivia/quiz, (2) riddles/puzzles — prototype first;
+  (3) did-you-know facts, (4) history/science explainers — second wave;
+  word games and listicles held as quiz variants; motivational and
+  storytime formats out for now. Design rule from TikTok policy: every
+  prototype 60+ s with narration + motion + captions (text-only is
+  excluded from Creator Rewards as "not original"). No RPM-based revenue
+  forecast — TikTok publishes no rate.
 
 ## In progress
 
-- **Opportunity/niche discovery — ready to start.** Evaluate candidate
-  niches/formats against the six evidence criteria, with experimental
-  prototypes and comparison. No success numbers set before studying
-  the data.
+- **Prototype videos for the leading candidates — ready to start.**
+  Build a trivia quiz round and a riddle round, each 60+ seconds, with
+  Kokoro narration, code-computed motion, faster-whisper captions, from
+  the proven stack; define a fair comparison method (metrics, baselines,
+  what counts as a meaningful difference) before any success judgement.
 
 ## Decisions (with evidence)
 
@@ -78,6 +90,16 @@ independence from Mohamed's daily involvement. Zero spend in this stage.
   Integrate conditionally as decided; always stop Studio after each
   render (2 node processes, ~216 MB, port 4747 left running otherwise).
   Peak render memory is unmeasured.
+- Niche shortlist DECIDED 2026-11-22 (desk research, three cited reports):
+  prototype trivia/quiz and riddles/puzzles first; did-you-know facts and
+  history/science explainers second wave; word games and listicles held as
+  quiz variants; motivational and storytime formats out for now. Every
+  prototype must be 60+ s with narration + motion + captions, because
+  TikTok Creator Rewards pays only original videos of at least 1 minute
+  and excludes text-only content; originality, not production method,
+  decides whether AI-made video can earn. No revenue forecast is firm —
+  TikTok publishes no RPM (creator-reported $0.40–$1.00 per 1,000
+  qualified views is an estimate only).
 
 ## Evidence pointers
 
@@ -89,18 +111,11 @@ independence from Mohamed's daily involvement. Zero spend in this stage.
 
 ## Blockers
 
-- **Push pending approval (2026-11-22 ~07:55 UTC).** Factory Test 2
-  PASSED and is recorded locally (STATE.md, RUNLOG.md, OPERATIONS.md,
-  factory-test-2/REPORT.md, render2.py, script2.json), but the snapshot
-  push to Musemetafa/muse main did NOT land: the push-files call was
-  interrupted by a service restart, remote head is still bfbaf20f, and
-  no write approval is pending. Per the loop rules the push was not
-  retried in this run. Next run: re-verify head (still bfbaf20f unless
-  someone else pushed), then push the same six text files with the
-  manifest at ~/workspace/.factory-test-2-push-paths.txt; update the
-  sync record only after a confirmed commit SHA. Binaries
-  (factory-test-2/runA.mp4, contact-sheet.jpg) are local-only and are
-  never pushed (snapshot pushes are text-only).
+- None open. Resolved 2026-11-22 ~11:25 UTC: the Factory Test 2 push
+  landed on retry (commit e9017a06, approved during the call; verified
+  by reading the remote repo — factory-test-2/ present with REPORT.md,
+  render2.py, script2.json). The earlier failure was a service restart
+  interrupting push-files, not a missing approval.
 - None open. Resolved 2026-11-22 ~02:57 UTC: OpenFilm render test retry
   PASSED after Mohamed's explicit confirmation.
 - Resolved 2026-11-22 ~02:52 UTC: Mohamed confirmed explicitly
@@ -123,24 +138,25 @@ independence from Mohamed's daily involvement. Zero spend in this stage.
 
 ## Next step
 
-1. Opportunity/niche discovery — evaluate candidate niches/formats
-   against the six evidence criteria (audience demand, spreadability,
-   differentiation, repeatability, production feasibility, commercial
-   viability), with experimental prototypes and comparison. No success
-   numbers set before studying the data. Start with desk research:
-   what formats are demonstrably repeatable with the proven stack
-   (deterministic render + motion + Kokoro voice + faster-whisper
-   captions), then prototype the strongest 2–3.
-2. Then: build the first prototype videos for the leading candidate(s)
-   and define a fair comparison method before any success judgement.
+1. Build the first prototype videos for the leading candidates (trivia
+   quiz round + riddle round), each 60+ seconds, with Kokoro narration,
+   code-computed motion, and faster-whisper captions, from the proven
+   stack. This also serves as the first real test of TTS naturalness for
+   quiz/riddle delivery (blind listening test still pending).
+2. Define a fair comparison method before any success judgement: metrics,
+   baselines (Revid 0.08% comments/view, 7.1% likes/view; Socialinsider
+   2.6% engagement by followers), and what counts as a meaningful
+   difference between prototypes. No success numbers set before the
+   comparison method is defined.
 
-## Next step criteria (for the niche discovery)
+## Next step criteria (for the prototype videos)
 
-- Each candidate judged against all six evidence criteria, with cited
-  primary sources for demand (not vibes or a single viral video).
-- Repeatability shown concretely: at least 10 distinct video ideas per
-  candidate that the proven stack could produce.
-- Production feasibility tied to measured capabilities (Test 1/2 render,
-  Kokoro RTF 2.67, faster-whisper RTF 0.20), not assumed tools.
-- A ranked shortlist with reasons, risks, and alternatives — not a list
-  of names.
+- Each prototype is 60+ seconds, narrated (Kokoro), with code-computed
+  motion and word-timed captions — the Creator Rewards design rule.
+- Every question/riddle/fact is fact-checked against a reliable source
+  before rendering; sources recorded in the prototype report.
+- Determinism and quality checks measured as in Test 1/2 (byte-identical
+  reruns, no black/frozen frames, no silence).
+- Comparison method written down before judging: metrics, baselines, and
+  the threshold for a meaningful difference — not decided after seeing
+  results.
