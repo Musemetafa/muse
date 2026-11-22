@@ -59,6 +59,8 @@ Both live in this repository so any run can resume from them.
   constant.
 - Each run starts with limited context and must rebuild it from `STATE.md`
   and the repository. Anything not written down does not survive.
+- `/tmp` is not durable: it was wiped mid-run on 2026-11-22. Evidence and
+  outputs go to `~/workspace` immediately, never left in `/tmp`.
 - GitHub writes ask for approval on every call. No standing approval exists
   for GitHub (checked 2026-11-22). A background run that needs to push may
   stall on an approval card until Mohamed answers it. This is the main

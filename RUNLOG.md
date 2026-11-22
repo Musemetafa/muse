@@ -43,3 +43,20 @@ for the next run. Newest at the bottom.
   report and state were local-only until this run's push. This run pushes
   STATE.md, RUNLOG.md, and the updated render-test report; push outcome
   recorded in the run report. Next: Factory Test 2.
+- 2026-11-22 ~07:50 UTC — Loop run (video-factory-loop, scheduled
+  07:45). Factory Test 2 PASSED: code-computed motion (slide/grow/
+  bounce), 720x1280 30 fps 6.0 s 180 frames, byte-identical reruns
+  (SHA256 9f3d5325...), no black/frozen/silence, motion measured at
+  frame level (0/59 zero-change pairs in scene 3). Two bugs found and
+  fixed: stdin-close crash in render2.py; /tmp wiped mid-run — outputs
+  now written to the workspace, lesson recorded in STATE.md and
+  OPERATIONS.md. Render ~5.5 s. Next: opportunity/niche discovery
+  against the six evidence criteria. Push outcome recorded below.
+- 2026-11-22 ~07:55 UTC — Push attempt FAILED to land (same run).
+  Snapshot push (OPERATIONS.md, STATE.md, RUNLOG.md,
+  factory-test-2/REPORT.md, render2.py, script2.json) interrupted by
+  a service restart while running; remote head verified still
+  bfbaf20f, no approval pending. Not retried per loop rules; recorded
+  as blocker "push pending approval" in STATE.md. All Test 2 evidence
+  is saved locally in ~/workspace/muse-repo/; next run retries the
+  push from the saved manifest.

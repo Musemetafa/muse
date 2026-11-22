@@ -1,6 +1,6 @@
 # Factory State
 
-Live operating state. Updated by every run. Last updated: 2026-11-22 ~03:00 UTC.
+Live operating state. Updated by every run. Last updated: 2026-11-22 ~07:50 UTC.
 
 ## Highest goal
 
@@ -35,14 +35,22 @@ independence from Mohamed's daily involvement. Zero spend in this stage.
   proven). Rule learned: OpenFilm Studio must be stopped after each
   render (it leaves 2 node processes, ~216 MB, port 4747). This proves
   the render layer only — not voice, generation, or audience appeal.
-- 2026-11-22: Self-running operations designed (`OPERATIONS.md`) and goal
-  `مصنع الفيديو` created as the loop's owner. Cron loop being set up.
+- 2026-11-22: Factory Test 2 (`factory-test-2/`) PASSED. Code-computed
+  motion (slide-in title + travelling dot, growing circle + sweeping
+  bar, bouncing ball + progress bar), 720x1280, 30 fps, 6.0 s, 180
+  frames; byte-identical reruns (SHA256 9f3d5325..., reproduced across
+  working directories); no black, no frozen (Test 1's frozen flags are
+  gone), no silence; motion measured at frame level (0/59 zero-change
+  consecutive pairs in scene 3). Render ~5.5 s from workspace disk.
+  Lesson: /tmp was wiped mid-run — evidence must be written to
+  ~/workspace immediately, never left in /tmp between steps.
 
 ## In progress
 
-- **Factory Test 2 — motion test, ready to run.** Add simple code-computed
-  motion inside a scene with the proven Python/Pillow/FFmpeg tools and
-  re-measure determinism and checks. No new approval needed.
+- **Opportunity/niche discovery — ready to start.** Evaluate candidate
+  niches/formats against the six evidence criteria, with experimental
+  prototypes and comparison. No success numbers set before studying
+  the data.
 
 ## Decisions (with evidence)
 
@@ -76,10 +84,23 @@ independence from Mohamed's daily involvement. Zero spend in this stage.
 - `audit/environment-audit-2026-11-21.md`
 - `research/open-source-video-factory-2026-11-22.md`
 - `factory-test-1/REPORT.md`
+- `factory-test-2/REPORT.md` (motion: deterministic, no frozen segments)
 - `OPERATIONS.md` (the loop), `RUNLOG.md` (run history)
 
 ## Blockers
 
+- **Push pending approval (2026-11-22 ~07:55 UTC).** Factory Test 2
+  PASSED and is recorded locally (STATE.md, RUNLOG.md, OPERATIONS.md,
+  factory-test-2/REPORT.md, render2.py, script2.json), but the snapshot
+  push to Musemetafa/muse main did NOT land: the push-files call was
+  interrupted by a service restart, remote head is still bfbaf20f, and
+  no write approval is pending. Per the loop rules the push was not
+  retried in this run. Next run: re-verify head (still bfbaf20f unless
+  someone else pushed), then push the same six text files with the
+  manifest at ~/workspace/.factory-test-2-push-paths.txt; update the
+  sync record only after a confirmed commit SHA. Binaries
+  (factory-test-2/runA.mp4, contact-sheet.jpg) are local-only and are
+  never pushed (snapshot pushes are text-only).
 - None open. Resolved 2026-11-22 ~02:57 UTC: OpenFilm render test retry
   PASSED after Mohamed's explicit confirmation.
 - Resolved 2026-11-22 ~02:52 UTC: Mohamed confirmed explicitly
@@ -95,22 +116,31 @@ independence from Mohamed's daily involvement. Zero spend in this stage.
 
 - Runs are periodic wake-ups, not continuous execution (see OPERATIONS.md).
 - State survives only if written to the home directory or this repository.
+- /tmp is not durable: it was wiped mid-run on 2026-11-22 between exec
+  calls. Evidence and outputs go to ~/workspace immediately.
 - A run's time budget is bounded by its schedule timeout; long work is
   split or delegated.
 
 ## Next step
 
-1. Factory Test 2 — add simple code-computed motion inside a scene,
-   re-measure determinism and automated checks (no approval needed; the
-   03:00 loop run picks it up if it has not started sooner).
-2. Then: opportunity/niche discovery against the six evidence criteria,
-   with experimental prototypes and comparison — no success numbers set
-   before studying the data.
+1. Opportunity/niche discovery — evaluate candidate niches/formats
+   against the six evidence criteria (audience demand, spreadability,
+   differentiation, repeatability, production feasibility, commercial
+   viability), with experimental prototypes and comparison. No success
+   numbers set before studying the data. Start with desk research:
+   what formats are demonstrably repeatable with the proven stack
+   (deterministic render + motion + Kokoro voice + faster-whisper
+   captions), then prototype the strongest 2–3.
+2. Then: build the first prototype videos for the leading candidate(s)
+   and define a fair comparison method before any success judgement.
 
-## Next step criteria (for the deep inspection)
+## Next step criteria (for the niche discovery)
 
-- Each candidate: license verified from its primary source (code AND
-  weights/models), US commercial use confirmed or flagged, hardware needs
-  measured or quoted from the primary source against 1.5 CPU / 6 GiB,
-  failure modes named.
-- Recommendation per candidate, not a list of names.
+- Each candidate judged against all six evidence criteria, with cited
+  primary sources for demand (not vibes or a single viral video).
+- Repeatability shown concretely: at least 10 distinct video ideas per
+  candidate that the proven stack could produce.
+- Production feasibility tied to measured capabilities (Test 1/2 render,
+  Kokoro RTF 2.67, faster-whisper RTF 0.20), not assumed tools.
+- A ranked shortlist with reasons, risks, and alternatives — not a list
+  of names.
