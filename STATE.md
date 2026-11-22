@@ -1,6 +1,6 @@
 # Factory State
 
-Live operating state. Updated by every run. Last updated: 2026-11-22 ~15:43 UTC.
+Live operating state. Updated by every run. Last updated: 2026-11-22 ~15:50 UTC.
 
 ## Highest goal
 
@@ -100,9 +100,6 @@ independence from Mohamed's daily involvement. Zero spend in this stage.
   paid metric in the Creator Rewards formula. Rules adopted: completion
   stays a deciding metric, AI-generated label mandatory on every video,
   60-second minimum stands, no volume strategy.
-
-## In progress
-
 - **Learning program — RESTRUCTURED into open discovery, DONE.**
   2026-11-22 ~15:43 UTC: `factory/LEARNING.md` revised (354 → 825
   lines): the open-ended principle at the top (listed domains are a
@@ -116,8 +113,35 @@ independence from Mohamed's daily involvement. Zero spend in this stage.
   follow/share psychology → M9; D14 sound design & loudness → M10;
   D17 cross-platform distribution → M13; D15 community → M16; D16
   monetisation ladder → M17). New domains sit at level NONE —
-  hypotheses, not knowledge. Next module: M2 retention science +
-  hooks.
+  hypotheses, not knowledge.
+- **Competitive-advantage discovery — DONE.** Built 2026-11-22 ~15:50
+  UTC: `factory/ADVANTAGE.md` (646 lines: advantage discovered not
+  copied; per-account diagnosis before any strategy; gap discovery
+  method; asset vs vanity metrics; operational independence with an
+  escalation table — escalate only when an action legally or
+  technically requires the owner; assumption audit + weakness scan;
+  benchmarking with 7 comparability rules, legitimate evidence only;
+  8 named asset sacrifices; transferability of the method) +
+  `factory/ACCOUNT_DIAGNOSIS.md` (198 lines, 12-section template, one
+  copy per account under `accounts/<handle>/DIAGNOSIS.md`). Current
+  status, stated honestly: level NONE; 0 accounts diagnosed, 0
+  competitors observed, 0 benchmarks, 0 proven gaps. The Morocco
+  browser-location fact is recorded in both files. Single most
+  important rule: no strategy is chosen before the diagnosis, and no
+  strategy transfers between accounts by assumption.
+
+## In progress
+
+- **TikTok account creation — BLOCKED on the country decision.**
+  2026-11-22 ~15:49 UTC: the cloud browser's location was verified
+  before creating the account — it appears from Fes, Morocco
+  (IP 104.29.199.94, Africa/Casablanca), NOT the US, even though the
+  VM's own egress shows New York. An account created in this browser
+  would likely register as Morocco-based, and Morocco is not on
+  TikTok's Creator Rewards eligible-country list (per current
+  research), so it would likely not be eligible for Creator Rewards.
+  The browser is open on the TikTok signup page with nothing entered.
+  Mohamed decides: create it anyway, or pause and find a US route.
 - **Mohamed's evaluation of the v2 prototypes.** He watches/listens to
   the trivia and riddle v2 videos, judges voice naturalness (af_heart
   vs am_adam), whether the icons and safe-zone layout read better, and
@@ -264,6 +288,33 @@ independence from Mohamed's daily involvement. Zero spend in this stage.
   mastery, and do not treat first experiments as proof of expertise.
   Use results to correct knowledge; turn what is learned into
   permanent factory capabilities.
+
+## Competitive advantage (standing rule, 2026-11-22)
+
+- The factory's job is not only to learn named fields but to
+  continuously discover what neither Mohamed nor it currently knows,
+  acquire it, test it, and turn it into real advantage. This ability
+  itself has no knowledge or operational ceiling.
+- Every account is an independent project (circumstances, history,
+  audience, capabilities). Diagnose each account first; no strategy
+  is assumed to transfer between accounts.
+- Competition is not copying successful accounts: find unexploited
+  opportunities, gaps competitors missed, and new ways to create value
+  and identity that are hard to imitate.
+- Views alone are not the success criterion; temporary virality is not
+  building a commercial asset with an audience that remembers,
+  searches for, returns to, and trusts the account.
+- Operational independence: discover, prioritise, research, decide,
+  execute, measure, learn, rebuild strategy without waiting for
+  Mohamed. Escalate only when an action legally or technically cannot
+  be completed without the account owner.
+- Self-evaluation: review assumptions and find weaknesses before
+  results reveal them; current tools and current thinking are never
+  assumed best. Benchmark against the strongest creators and
+  professional teams with comparable evidence; never claim superiority
+  results do not prove.
+- Protect the asset: account safety, content rights, monetization
+  eligibility, audience trust — never sacrificed for short-term gain.
 
 ## Next step criteria (for the prototype videos)
 

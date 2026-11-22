@@ -153,3 +153,30 @@ for the next run. Newest at the bottom.
   Series-linked videos do not earn Creator Rewards (adopted
   constraint, to re-verify officially). New domains at NONE —
   hypotheses, not knowledge. Next: M2 retention + hooks.
+- 2026-11-22 ~15:47 UTC — New level from Mohamed: independent
+  competitive-advantage discovery. Not learning named fields only, but
+  a continuous ability to discover what neither he nor the factory
+  knows, acquire it, test it, turn it into real advantage. Building
+  factory/ADVANTAGE.md (per-account diagnosis, gap discovery without
+  copying winners, asset metrics not views, operational independence,
+  self-evaluation, benchmarking against the strongest with comparable
+  legitimate evidence, asset protection) + factory/ACCOUNT_DIAGNOSIS.md
+  template. Escalation only when an action legally or technically
+  requires the account owner.
+- 2026-11-22 ~15:49 UTC — Browser location verified before account
+  creation: the cloud browser appears from Fes, Morocco (IP
+  104.29.199.94, Africa/Casablanca), NOT the US — the VM's own egress
+  (New York) is different. An account created here would likely
+  register as Morocco-based and likely not be eligible for Creator
+  Rewards. Browser left open on the TikTok signup page, nothing
+  entered. Creation blocked on Mohamed's decision.
+- 2026-11-22 ~15:50 UTC — Competitive-advantage discovery DONE:
+  factory/ADVANTAGE.md (646 lines) + factory/ACCOUNT_DIAGNOSIS.md
+  (198 lines, 12-section template). Core rule: no strategy before
+  diagnosis; no strategy transfers between accounts by assumption.
+  Current status honestly NONE: 0 accounts diagnosed, 0 competitors
+  observed, 0 benchmarks, 0 proven gaps. Morocco browser-location
+  fact recorded in both files. First change it makes: the trivia vs
+  riddle comparison is a learning instrument about the account, not a
+  strategy from the account's data, until the account's own numbers
+  speak.
