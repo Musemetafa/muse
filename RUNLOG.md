@@ -13,3 +13,11 @@ for the next run. Newest at the bottom.
   faster-whisper tiny.en RTF 0.20, WER 0.000 both); OpenFilm render
   unproven, approval requested from Mohamed. State updated; report and
   state pushed with this run.
+- 2026-11-22 ~02:45 UTC — Mohamed approved the OpenFilm render test.
+  Test started (delegated worker): npm install + Chromium download +
+  minimal render with --workers 1.
+- 2026-11-22 ~02:50 UTC — Render test FAIL, blocked by an execution-risk
+  gate (not by OpenFilm). npm install passed (1m44s, exit 0, 178
+  packages); no OpenFilm command ran, no Chromium downloaded, no render.
+  Retry ready if Mohamed confirms explicitly. State updated; report and
+  state pushed with this run.

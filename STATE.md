@@ -1,6 +1,6 @@
 # Factory State
 
-Live operating state. Updated by every run. Last updated: 2026-11-22 ~02:43 UTC.
+Live operating state. Updated by every run. Last updated: 2026-11-22 ~02:50 UTC.
 
 ## Highest goal
 
@@ -32,10 +32,17 @@ independence from Mohamed's daily involvement. Zero spend in this stage.
 
 ## In progress
 
-- **OpenFilm render test — waiting on Mohamed's approval.** The inspection
-  proved the voice-to-verify pipeline but not the video render. Running
-  `npm install` + a Chromium download from the cloned OpenFilm code needs
-  his explicit go-ahead (execution-risk check on cloned code).
+- **OpenFilm render test — BLOCKED by an execution-risk gate (procedural,
+  not technical).** `npm install` PASSED (1m44s, exit 0, 178 packages,
+  vite build 40.69s, node_modules 347 MB, UI built). Then a tool result
+  showing install progress failed an execution-risk check, and the runtime
+  forbids running/installing/building/testing the cloned content without
+  Mohamed being asked explicitly in plain words and his answer awaited.
+  No OpenFilm command was run: no Chromium download, no render. The
+  minimal film (720x1280, 9:16, 6 s) exists but was never rendered.
+  Retry is ready if Mohamed confirms: dependencies installed, UI built,
+  film written. Report:
+  `research/openfilm-render-test-2026-11-22.md`.
 - **Factory Test 2 — motion test, ready to run.** Add simple code-computed
   motion inside a scene with the proven Python/Pillow/FFmpeg tools and
   re-measure determinism and checks. No new approval needed.
@@ -77,12 +84,17 @@ independence from Mohamed's daily involvement. Zero spend in this stage.
 
 ## Blockers
 
-- Open: OpenFilm render test needs Mohamed's approval (`npm install` +
-  Chromium download from cloned code; execution-risk check). Asked
-  2026-11-22 ~02:43 UTC.
-- Resolved: GitHub App not installed on the repo (push rejected 403) —
-  fixed by Mohamed installing the app and selecting the repo; retry push
-  succeeded and was verified.
+- Open: OpenFilm render test is stopped at an execution-risk gate. The
+  runtime requires Mohamed to be asked explicitly, in plain words,
+  whether to run the OpenFilm CLI / Chromium download / render despite
+  the cloned content having failed the check, and his answer awaited.
+  Asked 2026-11-22 ~02:50 UTC. His earlier approval of the test does not
+  cover this separate gate.
+- Resolved 2026-11-22 ~02:45 UTC: OpenFilm render test approval (given,
+  test started).
+- Resolved earlier: GitHub App not installed on the repo (push rejected
+  403) — fixed by Mohamed installing the app and selecting the repo;
+  retry push succeeded and was verified.
 - Watch: GitHub writes ask for approval on every call; no standing approval
   exists. Background pushes may stall on approval. To be measured by the
   test run at 03:00 UTC.
@@ -96,11 +108,10 @@ independence from Mohamed's daily involvement. Zero spend in this stage.
 
 ## Next step
 
-1. OpenFilm render test (pending Mohamed's approval): `npm install` +
-   Chromium download + minimal `openfilm render --workers 1`. Passes if:
-   install succeeds, Chromium downloads, a minimal film renders to a
-   720x1280 video with correct duration, no black/frozen frames, and the
-   render time is documented.
+1. Await Mohamed's explicit answer on proceeding past the execution-risk
+   gate for the OpenFilm render test. If yes: retry the render (Chromium
+   download + minimal render with --workers 1). If no: record the render
+   as unproven-by-test and move on.
 2. Factory Test 2 — add simple code-computed motion inside a scene,
    re-measure determinism and automated checks (no approval needed; the
    03:00 loop run picks it up if it has not started sooner).
