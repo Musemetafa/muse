@@ -1,0 +1,1 @@
+{"fps":30,"height":1280,"scenes":[{"bg":[18,32,62],"body":"Parameterized render from data","duration":2.0,"title":"FACTORY TEST 1"},{"bg":[62,18,32],"body":"Same input, same output","duration":2.0,"title":"SCENE TWO"},{"bg":[18,62,32],"body":"Checked, not just rendered","duration":2.0,"title":"SCENE THREE"}],"width":720}
