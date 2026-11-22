@@ -180,3 +180,18 @@ for the next run. Newest at the bottom.
   riddle comparison is a learning instrument about the account, not a
   strategy from the account's data, until the account's own numbers
   speak.
+- 2026-11-22 ~15:56 UTC — Mohamed is registering a clean British
+  TikTok account in his own browser and will hand it over. Rule: no
+  assumption from "British" beyond the registration-country fact (UK,
+  verified from the account on handover). Access protocol being built
+  (factory/ACCOUNT_ACCESS.md): official surfaces only, OAuth, token
+  hygiene, rate limits, human-in-the-loop publishing — no evasion.
+  Cloud browser signup window closed.
+- 2026-11-22 ~15:58 UTC — Account access protocol DONE:
+  factory/ACCOUNT_ACCESS.md (429 lines). Legitimate surfaces only;
+  evasion is itself a detection signal; the factory never pretends to
+  be a human and never signs in as the user; a restriction is
+  information, not an obstacle to route around. On handover: verify
+  identity via official authorization, read Studio → Monetization,
+  run the per-account diagnosis. Waiting on Mohamed's handover of the
+  British account.

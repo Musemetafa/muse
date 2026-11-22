@@ -1,6 +1,6 @@
 # Factory State
 
-Live operating state. Updated by every run. Last updated: 2026-11-22 ~15:50 UTC.
+Live operating state. Updated by every run. Last updated: 2026-11-22 ~15:58 UTC.
 
 ## Highest goal
 
@@ -132,16 +132,25 @@ independence from Mohamed's daily involvement. Zero spend in this stage.
 
 ## In progress
 
-- **TikTok account creation — BLOCKED on the country decision.**
-  2026-11-22 ~15:49 UTC: the cloud browser's location was verified
-  before creating the account — it appears from Fes, Morocco
-  (IP 104.29.199.94, Africa/Casablanca), NOT the US, even though the
-  VM's own egress shows New York. An account created in this browser
-  would likely register as Morocco-based, and Morocco is not on
-  TikTok's Creator Rewards eligible-country list (per current
-  research), so it would likely not be eligible for Creator Rewards.
-  The browser is open on the TikTok signup page with nothing entered.
-  Mohamed decides: create it anyway, or pause and find a US route.
+- **TikTok account — Mohamed is creating it, handover pending.**
+  2026-11-22 ~15:56 UTC: Mohamed is registering a clean British
+  account in his own browser and will hand it over. Standing rule: do
+  NOT assume anything from "British" beyond the registration-country
+  fact (UK, to be verified from the account itself when handed over);
+  audience, content, and monetization eligibility are discovered and
+  verified, not assumed.
+- **Account access protocol — DONE.** Built 2026-11-22 ~15:58 UTC:
+  `factory/ACCOUNT_ACCESS.md` (429 lines). Core rules: legitimate
+  surfaces only (Login Kit OAuth, Content Posting API draft mode,
+  Display API, TikTok app/Studio) — evasion is itself a detection
+  signal; the factory never pretends to be a human and never signs in
+  as the user (tokens, never the password); a restriction is
+  information, not an obstacle to route around. Token hygiene (2 h
+  access, 180 d rotating refresh), behaviour rules (1 video/day,
+  ≤1 API call/min, human-in-the-loop publishing). On handover: verify
+  identity via official authorization, read Studio → Monetization for
+  the actual account, run the per-account diagnosis before any
+  strategy or publish decision.
 - **Mohamed's evaluation of the v2 prototypes.** He watches/listens to
   the trivia and riddle v2 videos, judges voice naturalness (af_heart
   vs am_adam), whether the icons and safe-zone layout read better, and
