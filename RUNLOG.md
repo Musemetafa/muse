@@ -29,3 +29,17 @@ for the next run. Newest at the bottom.
   first render, 28.7 s rerun, byte-identical. Rule: stop Studio after
   each render (2 node processes, ~216 MB, port 4747). State updated;
   report and state pushed with this run. Next: Factory Test 2.
+- 2026-11-22 ~03:00 UTC — Loop test run (video-factory-loop-test).
+  Scheduler fired ~02:57 UTC (scheduled 03:00). Resumed from STATE.md:
+  recorded next step was the OpenFilm render-test retry, which had just
+  PASSED at 02:57 (delegated worker). Deep-inspection report verified
+  done; its three recommendations (OpenFilm INTEGRATE conditional, Kokoro
+  ADOPT, faster-whisper ADOPT as-is) were already in STATE.md Decisions
+  — verified, stale "render unproven" wording fixed. Repo root listing
+  verified against the local record (remote head cdb1d069; README,
+  OPERATIONS, STATE, RUNLOG, audit/, factory-test-1/, research/ all
+  present). Correction: the 02:57 line's "pushed" claim was unverified —
+  remote head was still cdb1d069 when checked ~02:58 UTC, so the PASS
+  report and state were local-only until this run's push. This run pushes
+  STATE.md, RUNLOG.md, and the updated render-test report; push outcome
+  recorded in the run report. Next: Factory Test 2.

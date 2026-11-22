@@ -1,6 +1,6 @@
 # Factory State
 
-Live operating state. Updated by every run. Last updated: 2026-11-22 ~02:57 UTC.
+Live operating state. Updated by every run. Last updated: 2026-11-22 ~03:00 UTC.
 
 ## Highest goal
 
@@ -20,6 +20,13 @@ independence from Mohamed's daily involvement. Zero spend in this stage.
   Proves assembly only, not motion or audience appeal.
 - 2026-11-22: Repository `Musemetafa/muse` created, app installed, first
   snapshot pushed (commit `e8c71405`). Read and write access verified.
+- 2026-11-22: Deep inspection of OpenFilm, Kokoro-82M, faster-whisper
+  (`research/deep-inspection-openfilm-kokoro-whisper-2026-11-22.md`).
+  OpenFilm: INTEGRATE conditionally (MIT verified). Kokoro-82M: ADOPT via
+  kokoro-onnx (Apache-2.0 verified; RTF 2.67, slower than real time;
+  naturalness needs a listening test). faster-whisper: ADOPT as-is,
+  tiny.en default (RTF 0.20, 279 MB; pin av==12.3.0). Voice-to-verify
+  pipeline proven end-to-end on CPU.
 - 2026-11-22: OpenFilm render test PASSED on retry
   (`research/openfilm-render-test-2026-11-22.md`). Chromium downloaded
   (Chrome Headless Shell 149, 114.2 MiB); minimal film rendered 720x1280,
@@ -28,12 +35,6 @@ independence from Mohamed's daily involvement. Zero spend in this stage.
   proven). Rule learned: OpenFilm Studio must be stopped after each
   render (it leaves 2 node processes, ~216 MB, port 4747). This proves
   the render layer only — not voice, generation, or audience appeal.
-  (`research/deep-inspection-openfilm-kokoro-whisper-2026-11-22.md`).
-  OpenFilm: INTEGRATE conditionally (MIT verified; render unproven).
-  Kokoro-82M: ADOPT via kokoro-onnx (Apache-2.0 verified; RTF 2.67, slower
-  than real time; naturalness needs a listening test). faster-whisper:
-  ADOPT as-is, tiny.en default (RTF 0.20, 279 MB; pin av==12.3.0).
-  Voice-to-verify pipeline proven end-to-end on CPU; video render not proven.
 - 2026-11-22: Self-running operations designed (`OPERATIONS.md`) and goal
   `مصنع الفيديو` created as the loop's owner. Cron loop being set up.
 
@@ -69,7 +70,6 @@ independence from Mohamed's daily involvement. Zero spend in this stage.
   Integrate conditionally as decided; always stop Studio after each
   render (2 node processes, ~216 MB, port 4747 left running otherwise).
   Peak render memory is unmeasured.
-- Kokoro-82M: ADOPT as the voice layer via kokoro-onnx. Apache-2.0 weights
 
 ## Evidence pointers
 
