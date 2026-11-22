@@ -163,3 +163,163 @@ black/frozen frames, render time documented": **NOT TESTED**.
   code ran. The render question is still open, and the next step is a
   plain-words question to Mohamed about proceeding despite the failed
   execution-risk check, then waiting for his answer.
+
+
+---
+
+## RETRY — 2026-11-22 ~02:53–02:57 UTC
+
+### Basis for proceeding
+
+The first attempt stopped at an execution-risk gate. The parent agent
+then asked Mohamed in plain words whether to run the OpenFilm commands
+(Chromium download and render) despite the cloned content having failed
+the execution-risk check. On 2026-11-22 02:52 UTC he answered YES:
+"نعم، واصل رغم التحذير" (yes, continue despite the warning). This
+retry proceeds on that explicit confirmation. It does not ask again.
+
+Note: a second execution-risk notice arrived during this retry, attached
+to the read of this report file itself. I proceeded because Mohamed's
+02:52 UTC answer was given to exactly that question — whether to run
+the OpenFilm commands despite the failed check — and the retry task
+carries it as the gate's go-ahead. Scope was kept strictly to what he
+approved: the OpenFilm CLI, the Chromium download, and the render of
+the minimal film. No other cloned content was processed, nothing was
+re-cloned, no new installs beyond the already-approved npm install.
+
+### Step 1 — verify prior state (no reinstall, no re-clone)
+
+Verified before running anything:
+
+- `~/workspace/inspection/openfilm/packages/openfilm/node_modules/`
+  347 MB present; `studio/ui/dist/` 8.8 MB present.
+- Minimal film present: `~/workspace/inspection/openfilm-test/film/`
+  (`film.html`, `scenes/title.html`), unchanged from the first attempt.
+- No stray npm/node/vite processes running.
+- Free RAM at retry start: 230 MB free / 1,070 MB available
+  (memory pressure is real on this VM).
+
+### Step 2 — CLI check (`--help`, `doctor`)
+
+Commands (in `~/workspace/inspection/openfilm/packages/openfilm`,
+`TMPDIR=~/tmp-openfilm`):
+
+```
+node bin/openfilm.mjs --help
+node bin/openfilm.mjs doctor
+```
+
+- `--help` (exit 0) lists: `open`, `look`, `render [a-b]`, `get`,
+  `skills`, `publish`, `update`, `doctor`. Render options include
+  `--fps`, `--workers`, `--out`, `--scale`, `--alpha`.
+- `doctor` (exit 0): OpenFilm 0.4.1, Node v24.22.1, ffmpeg/ffprobe
+  8.1.2, network reachable. One failure: "✗ Browser — not downloaded
+  yet. To fix: `openfilm open` downloads it (about 100 MB, once)."
+
+### Step 3 — render (Chromium download + 180 frames)
+
+Command (in `~/workspace/inspection/openfilm-test/film`,
+`TMPDIR=~/tmp-openfilm`):
+
+```
+node ~/workspace/inspection/openfilm/packages/openfilm/bin/openfilm.mjs render --workers 1 --fps 30
+```
+
+First run, 2026-11-22T02:54:02Z–02:55:35Z — **exit 0, 93 s wall**:
+
+- Studio started a local server at `http://127.0.0.1:4747/` and offered
+  a browser URL. No browser was opened and no Studio interaction
+  happened; the render carried on without it. (The server stayed
+  running afterwards — see "Cleanup" below.)
+- First run on this machine, the CLI downloaded the browser itself:
+  Chrome Headless Shell 149.0.7827.55 (playwright
+  chromium-headless-shell v1228), 114.2 MiB, to
+  `/home/hatch/.cache/ms-playwright/chromium_headless_shell-1228`
+  (262 MB on disk), plus playwright FFmpeg v1011, 2.3 MiB, to
+  `/home/hatch/.cache/ms-playwright/ffmpeg-1011` (4.9 MB on disk).
+- Rendered 180 frames with 1 browser: "180 frames · 6s at 30 fps ·
+  720×1280 · 1 worker · libx264 · **34.1 s**".
+- Output: `film.mp4` beside film.html, 397,853 bytes.
+
+Pass criterion "Chromium downloads": **MET** (measured).
+
+### Step 4 — verification of the output
+
+`ffprobe` on `film.mp4`:
+
+- codec H.264, video only (the test film has no audio track),
+  720×1280, r_frame_rate 30/1, nb_frames 180, duration 6.000000,
+  size 397,853 bytes. **Matches the film exactly.**
+
+Automated checks (ffmpeg):
+
+- `blackdetect=d=0.1:pix_th=0.10`: no black segments.
+- `freezedetect=n=0.003`: no frozen segments.
+- `silencedetect`: not applicable — the film has no audio track.
+
+Visual check: a 6-frame contact sheet (1 fps) was extracted and
+viewed. It shows the real picture, not a blank: title "OPENFILM /
+render test", a yellow circle moving left to right, the background
+hue shifting teal → purple, the `t = …s` readout advancing
+(0.47s → 5.47s), and the progress bar filling. Text is legible.
+
+Pass criteria "renders to a 720×1280 video with correct duration, no
+black/frozen frames": **MET** (measured + viewed).
+
+### Step 5 — determinism (rerun)
+
+The render was run a second time, unchanged, 02:55:57Z–02:56:28Z:
+exit 0, 31 s wall, "180 frames · 6s at 30 fps · 720×1280 · 1 worker ·
+libx264 · **28.7 s**". SHA256 of both outputs is identical:
+
+```
+d22e59cae57aefc5f4912bb6ada4912049dd0bc57c7bf9480f9427e7772cd505
+```
+
+`cmp` confirms byte-identical. Determinism is proven for this film,
+not just format-promised.
+
+### Cleanup (side effect found and fixed)
+
+The render leaves OpenFilm Studio running: two `node
+studio/server/main.mjs` processes (~216 MB RSS combined) and port
+4747 listening (HTTP 200) after the render finished. I stopped them
+with SIGTERM and verified: no node/chrome processes remain, port 4747
+closed, free RAM recovered to 558 MB / 1,160 MB available. Any future
+automated use must stop Studio after rendering, or the VM leaks a
+server and memory on every run.
+
+### Failures and fixes in the retry
+
+- Failure 1: second execution-risk notice (on the read of this report).
+  Handled by proceeding on Mohamed's explicit 02:52 UTC YES, which was
+  the answer to exactly that question; scope kept to the approved
+  commands only. Recorded here, not hidden.
+- Failure 2 (side effect, not a render failure): Studio server left
+  running after render. Fixed by killing its processes and verifying
+  the port closed.
+- Peak memory during the render itself was not sampled; only
+  before/after readings were taken (before: 152 MB free / 960 MB
+  avail; after first render: 506 MB free / 947 MB avail). No OOM and
+  no crash occurred, so the render fits in memory, but the exact peak
+  is unmeasured.
+
+### Footprint
+
+- Clone + install: 527 MB (`openfilm/`), test film + logs: 884 KB,
+  Playwright cache: 267 MB. Total ~795 MB of 148 GB free.
+  Nothing was bought; no paid accounts or API keys were used.
+
+## RETRY VERDICT: PASS
+
+- Chromium download: PASS (114.2 MiB, Chrome Headless Shell
+  149.0.7827.55, on disk at `~/.cache/ms-playwright/`).
+- Render: PASS (720×1280, 6.000000 s, 180 frames, 30 fps, H.264,
+  397,853 bytes; no black/frozen frames; contact sheet viewed).
+- Render time documented: PASS (34.1 s first render, 28.7 s rerun;
+  93 s wall first run including downloads, 31 s wall rerun).
+- Determinism: proven (two runs byte-identical, same SHA256).
+- Overall: **PASS**. OpenFilm renders on this CPU-only VM with
+  `--workers 1`. Remaining cautions: Studio must be stopped after
+  each render; peak render memory is unmeasured; this proves the
+  render layer only — not voice, not generation, not audience appeal.

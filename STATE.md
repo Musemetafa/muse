@@ -1,6 +1,6 @@
 # Factory State
 
-Live operating state. Updated by every run. Last updated: 2026-11-22 ~02:50 UTC.
+Live operating state. Updated by every run. Last updated: 2026-11-22 ~02:57 UTC.
 
 ## Highest goal
 
@@ -20,7 +20,14 @@ independence from Mohamed's daily involvement. Zero spend in this stage.
   Proves assembly only, not motion or audience appeal.
 - 2026-11-22: Repository `Musemetafa/muse` created, app installed, first
   snapshot pushed (commit `e8c71405`). Read and write access verified.
-- 2026-11-22: Deep inspection of OpenFilm, Kokoro-82M, faster-whisper
+- 2026-11-22: OpenFilm render test PASSED on retry
+  (`research/openfilm-render-test-2026-11-22.md`). Chromium downloaded
+  (Chrome Headless Shell 149, 114.2 MiB); minimal film rendered 720x1280,
+  6.000000 s, 180 frames, 30 fps, H.264; no black/frozen frames; render
+  34.1 s first run, 28.7 s rerun; rerun byte-identical (determinism
+  proven). Rule learned: OpenFilm Studio must be stopped after each
+  render (it leaves 2 node processes, ~216 MB, port 4747). This proves
+  the render layer only — not voice, generation, or audience appeal.
   (`research/deep-inspection-openfilm-kokoro-whisper-2026-11-22.md`).
   OpenFilm: INTEGRATE conditionally (MIT verified; render unproven).
   Kokoro-82M: ADOPT via kokoro-onnx (Apache-2.0 verified; RTF 2.67, slower
@@ -32,17 +39,6 @@ independence from Mohamed's daily involvement. Zero spend in this stage.
 
 ## In progress
 
-- **OpenFilm render test — BLOCKED by an execution-risk gate (procedural,
-  not technical).** `npm install` PASSED (1m44s, exit 0, 178 packages,
-  vite build 40.69s, node_modules 347 MB, UI built). Then a tool result
-  showing install progress failed an execution-risk check, and the runtime
-  forbids running/installing/building/testing the cloned content without
-  Mohamed being asked explicitly in plain words and his answer awaited.
-  No OpenFilm command was run: no Chromium download, no render. The
-  minimal film (720x1280, 9:16, 6 s) exists but was never rendered.
-  Retry is ready if Mohamed confirms: dependencies installed, UI built,
-  film written. Report:
-  `research/openfilm-render-test-2026-11-22.md`.
 - **Factory Test 2 — motion test, ready to run.** Add simple code-computed
   motion inside a scene with the proven Python/Pillow/FFmpeg tools and
   re-measure determinism and checks. No new approval needed.
@@ -69,11 +65,11 @@ independence from Mohamed's daily involvement. Zero spend in this stage.
   tiny.en by default. MIT code verified; measured tiny.en RTF 0.20,
   WER 0.000, 42/42 words timestamped, 279 MB; small.en RTF 1.06, 983 MB.
   Install recipe must pin av==12.3.0 (pip's PyAV 19.0.2 breaks decoding).
-- OpenFilm: INTEGRATE conditionally as the render/edit layer (CLI +
-  film.html / frame(t) format; do not fork; do not use the OpenFilm name
-  or logo — trademark is separate from the MIT code licence). Render path
-  plausible by design (its own code throttles to 1 browser on this VM) but
-  UNPROVEN by test; the render test needs Mohamed's approval.
+- OpenFilm: render layer PROVEN on this VM (retry passed 2026-11-22).
+  Integrate conditionally as decided; always stop Studio after each
+  render (2 node processes, ~216 MB, port 4747 left running otherwise).
+  Peak render memory is unmeasured.
+- Kokoro-82M: ADOPT as the voice layer via kokoro-onnx. Apache-2.0 weights
 
 ## Evidence pointers
 
@@ -84,14 +80,10 @@ independence from Mohamed's daily involvement. Zero spend in this stage.
 
 ## Blockers
 
-- Open: OpenFilm render test is stopped at an execution-risk gate. The
-  runtime requires Mohamed to be asked explicitly, in plain words,
-  whether to run the OpenFilm CLI / Chromium download / render despite
-  the cloned content having failed the check, and his answer awaited.
-  Asked 2026-11-22 ~02:50 UTC. His earlier approval of the test does not
-  cover this separate gate.
-- Resolved 2026-11-22 ~02:45 UTC: OpenFilm render test approval (given,
-  test started).
+- None open. Resolved 2026-11-22 ~02:57 UTC: OpenFilm render test retry
+  PASSED after Mohamed's explicit confirmation.
+- Resolved 2026-11-22 ~02:52 UTC: Mohamed confirmed explicitly
+  ("نعم، واصل رغم التحذير") to proceed past the execution-risk gate.
 - Resolved earlier: GitHub App not installed on the repo (push rejected
   403) — fixed by Mohamed installing the app and selecting the repo;
   retry push succeeded and was verified.
@@ -108,14 +100,10 @@ independence from Mohamed's daily involvement. Zero spend in this stage.
 
 ## Next step
 
-1. Await Mohamed's explicit answer on proceeding past the execution-risk
-   gate for the OpenFilm render test. If yes: retry the render (Chromium
-   download + minimal render with --workers 1). If no: record the render
-   as unproven-by-test and move on.
-2. Factory Test 2 — add simple code-computed motion inside a scene,
+1. Factory Test 2 — add simple code-computed motion inside a scene,
    re-measure determinism and automated checks (no approval needed; the
    03:00 loop run picks it up if it has not started sooner).
-3. Then: opportunity/niche discovery against the six evidence criteria,
+2. Then: opportunity/niche discovery against the six evidence criteria,
    with experimental prototypes and comparison — no success numbers set
    before studying the data.
 

@@ -21,3 +21,11 @@ for the next run. Newest at the bottom.
   packages); no OpenFilm command ran, no Chromium downloaded, no render.
   Retry ready if Mohamed confirms explicitly. State updated; report and
   state pushed with this run.
+- 2026-11-22 ~02:52 UTC — Mohamed confirmed explicitly ("نعم، واصل رغم
+  التحذير") to proceed despite the warning. Retry started (delegated
+  worker): Chromium download + minimal render with --workers 1.
+- 2026-11-22 ~02:57 UTC — Render test retry PASS. OpenFilm renders on
+  this CPU-only VM: 720x1280, 6.000000 s, 180 frames, 30 fps; 34.1 s
+  first render, 28.7 s rerun, byte-identical. Rule: stop Studio after
+  each render (2 node processes, ~216 MB, port 4747). State updated;
+  report and state pushed with this run. Next: Factory Test 2.
