@@ -362,7 +362,13 @@ independence from Mohamed's daily involvement. Zero spend in this stage.
   RUNLOG.md, M3 + M2 reports, LEARNING.md, HOOKS.md, DESIGN_RULES.md,
   EXPERIMENT_LOG.md, EXPERIMENTS.md, DIAGNOSIS.md). Remote head
   verified 576f0c55. The two timed-out requests (20:04, 21:01 UTC)
-  were superseded by this approved retry.
+  were superseded by this approved retry. Second push also landed
+  ~00:08 UTC (commit f29b05a9: STATE.md, RUNLOG.md, prototype-2/
+  REPORT.md). Approval problem (Mohamed 00:07 UTC: must not require
+  his presence): both tonight's approvals were "Allowed" (once) per
+  history — no standing grant exists. Fix: next push card, Mohamed
+  picks the lasting always-allow choice if offered; fallback is
+  batching pushes to once a day (needs his yes).
 - None open. Resolved 2026-11-22 ~11:25 UTC: the Factory Test 2 push
   landed on retry (commit e9017a06, approved during the call; verified
   by reading the remote repo — factory-test-2/ present with REPORT.md,

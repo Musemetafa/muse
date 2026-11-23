@@ -396,3 +396,12 @@ for the next run. Newest at the bottom.
   file had been cleaned up, so it was recreated from the 20:04
   command before pushing. Remote head verified 576f0c55. Blocker
   resolved; sync record updated (16 entries).
+- 2026-11-23 ~00:08 UTC — Second push LANDED (commit f29b05a9, 3
+  files: STATE.md, RUNLOG.md, prototype-2/REPORT.md). Approval
+  history shows both tonight's approvals were "Allowed" (once),
+  not a lasting allow — that is why every push asks again. No
+  standing exec grant exists in permissions (verified list_active,
+  both pages). Fix in progress: next push card, Mohamed to look
+  for the lasting always-allow choice; fallback if the card does
+  not offer it is to batch pushes to once a day (needs his yes,
+  it changes the loop job).
