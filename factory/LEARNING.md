@@ -365,10 +365,11 @@ script templates; Module 3 report.
 viewer stays or leaves at each second of a video; design the pacing of
 a round (question → think → reveal) so completion rises; read a
 retention curve in TikTok Studio and say what to change next.
-**Current level:** NONE. The factory has a 5-second think time (trivia)
-and a 10-second think time (riddles) chosen by intuition, not evidence.
-The H3 prediction in `EXPERIMENTS.md` (pace beats suspense) is a
-guess waiting for data.
+**Current level:** LEARNING (Module 2, 2026-11-22: `research/retention-hooks-2026-11-22.md`).
+The factory can now state, with labelled evidence, why viewers leave at each second and
+how to read a retention curve — but it has no retention curve of its own yet. The 5-second
+think time (trivia) and 10-second think time (riddles) are still untested; H3 now has a
+designed test (5 s vs 10 s inside trivia, falsifier ≥5 points completion).
 **Key questions:** What does the retention curve of a quiz video look
 like, and where do viewers leave? Does a longer think time raise
 completion (suspense) or lower it (boredom)? What does a rewatch mean,
@@ -388,9 +389,12 @@ stops the swipe, in several distinct ways — visual, audio, textual,
 narrative — and choose the hook that fits the video instead of
 repeating one template; test hooks against each other and keep the
 winners.
-**Current level:** NONE. The current prototypes open with a title card
-("TRIVIA CHALLENGE") and a spoken introduction. No hook has been
-tested against any other.
+**Current level:** LEARNING (Module 2, 2026-11-22). The factory has a hook library
+(`factory/HOOKS.md`: 8 named patterns, each with promise, opening line, delivery
+requirement, falsifier) and the opening rules in `DESIGN_RULES.md` Rule 3 — but no hook
+has been tested against any other. The current prototypes still open with a title card
+and a spoken introduction; by Module 2's evidence that is the weakest part of both
+videos, and it is kept unchanged only because the prototypes are the control comparison.
 **Key questions:** What kinds of hooks exist, and what does each one
 promise the viewer? Which hook fits a quiz round and which fits a
 riddle round? Does the hook live in the first 1 second, the first 3,
@@ -490,7 +494,16 @@ Pulled forward immediately if any strike, removal, or review occurs.
 viewer can feel (knows enough to sense it, not enough to close it);
 hold the gap the right length; write reveals that close it cleanly;
 and know when curiosity helps memory and when it blocks what follows.
-**Current level:** NONE.
+**Current level:** LEARNING (Module 3 done 2026-11-22 —
+`research/curiosity-science-2026-11-22.md`). M3 established: gap
+sizing by foothold + guess tests; difficulty rising through a round
+(easy opener, hardest last); ≥1 common-mistake question per round;
+reveal = answer + one-line why, clean 1–2 s beat; post-reveal beat
+carries only the next question's hook (M2 rule 6 CONFIRMED, now
+[ACADEMIC] via Keller et al. 2024, refined: unrelated material stays
+out, the 'why' belongs to the reveal, the next hook must be a real
+gap); retrieval practice — the attempt is the product, scores are
+memory devices, material returns across videos (spaced retrieval).
 **Key questions:** Which gap sizes hold attention without frustrating?
 How long should a reveal be held? Does a confusing answer waste the
 curiosity the question built? What does the 2024 interference finding
@@ -737,8 +750,8 @@ recorded here.
 | # | Module | Domains | Why here | Output |
 |---|---|---|---|---|
 | **1** | **TikTok mastery** — platform mechanics, discovery, TikTok SEO, policies, monetization | D1, D2 (intro), D10 (intro) | The ground rules. Without it the factory could publish something ineligible, unlabelled, or unfindable. Done first, done now. | `research/tiktok-mastery-1-2026-11-22.md` |
-| **2** | **Retention science + hooks** | D5, D6 | The first creative variables the factory will test (hook wording is first in the experiment variable queue; think time is the H3 prediction). Highest leverage on completion, the deciding metric. | `research/retention-hooks-YYYY-MM-DD.md` |
-| **3** | **Curiosity-gap & retrieval-practice science** | D11 | Governs question design; M2's hooks need it. Discovered by Scan 1. | `research/curiosity-science-YYYY-MM-DD.md` |
+| **2** | **Retention science + hooks** | D5, D6 | The first creative variables the factory will test (hook wording is first in the experiment variable queue; think time is the H3 prediction). Highest leverage on completion, the deciding metric. **Done 2026-11-22.** | `research/retention-hooks-2026-11-22.md` + `factory/HOOKS.md` |
+| **3** | **Curiosity-gap & retrieval-practice science** | D11 | Governs question design; M2's hooks need it. Discovered by Scan 1. **Done 2026-11-22.** | `research/curiosity-science-2026-11-22.md` |
 | **4** | **Gamification & habit architecture** | D12 | The return loop; pairs with D11. Discovered by Scan 1. | `research/gamification-habits-YYYY-MM-DD.md` |
 | **5** | **US audience study** | D4 | Follows the return-loop pair: audience study should test whether *these* mechanics land with *this* audience. | `research/us-audience-YYYY-MM-DD.md` |
 | **6** | **TikTok SEO, deep** — keyword practice, Creator Search Insights routine, search-value measurement | D2 | Needed to pick the next topics from real search demand (content gaps) instead of guessing. Feeds the idea queue. | `research/tiktok-seo-YYYY-MM-DD.md` |
@@ -796,6 +809,67 @@ recorded here.
    lost Rewards income. Source: practitioner-checked against TikTok's
    own pages — re-verify against TikTok's official pages before any
    Series decision.
+
+## Rules adopted from Module 2 (official evidence, or labelled inference)
+
+Evidence: `research/retention-hooks-2026-11-22.md`. Level: LEARNING.
+
+1. **Promise by second 3.** Spoken and on screen. Design to 2, deadline 3.
+   (Creator Academy; Ads Help Center 3 s proposition / 6 s hook.)
+2. **Frame 0 is live.** No static title card as the opening, no greeting,
+   no logo-first frame. (Dev.to frame-0 data; Blossom library.)
+3. **The question stays visible ≥3 seconds; the first change lands before
+   second 3.** (Dev.to operational finding.)
+4. **No dead seconds.** Every second of think time shows change. (Creator
+   Academy "trim lulls"; inference for the think-time application.)
+5. **The promise test.** A hook must deliver the exact thing it promised.
+   (Factory red lines; TikTok misleading-content rules, M1 §5.)
+6. **Nothing unrelated immediately after a reveal.** The next beat is the
+   next question's hook — not an unrelated fact, a CTA, branding, or a
+   score recap. A one-sentence 'why' belonging to the answer is part of
+   the reveal; the reveal gets a clean 1–2 s beat; the next hook must be
+   a real gap. CONFIRMED by M3 (Keller et al. 2024, [ACADEMIC]); the
+   behavioural effect of a post-reveal CTA is UNPROVEN (H-M3-2).
+7. **Completion decides; average watch time supports.** No invented
+   benchmark — compare only against our own videos at the same length.
+8. **No loop engineering for the 90-second format** until a completion
+   baseline exists.
+
+## Rules adopted from Module 3 (academic evidence, or labelled inference)
+
+Evidence: `research/curiosity-science-2026-11-22.md`. Level: LEARNING.
+M2 rule 6 above is CONFIRMED and refined by this module (see M3 §8).
+
+1. **Gap sizing: the "almost know" rule.** Every question passes the
+   foothold test and the guess test; difficulty rises across a round,
+   hardest question last. (Loewenstein 1994; Kang et al. 2009;
+   Metcalfe 2020; [INFERENCE] for the operational tests.)
+2. **The reveal has three jobs.** State the answer unambiguously; show
+   why the likely guess was wrong in one sentence; give the one fact
+   that makes the true answer feel inevitable. Then a clean 1–2 second
+   beat on the answer. (Fastrich et al. 2018; Butterfield & Metcalfe
+   2006; [INFERENCE] for the 1–2 s beat.)
+3. **M2 rule 6 confirmed and refined.** Nothing unrelated that must be
+   remembered or acted on immediately after a reveal; the next beat is
+   the next question's hook. A one-sentence "why" belonging to the
+   answer is part of the reveal. (Keller et al. 2024; Fastrich et al.
+   2018.)
+4. **At least one common-mistake question per round.** The obvious
+   answer is wrong. (Kang et al. 2009; Butterfield & Metcalfe 2006;
+   Fastrich et al. 2018.)
+5. **Fact-checking is memory-critical, not just policy-critical.** A
+   wrong answer is hyper-encoded by exactly the viewers who engaged
+   hardest. (Metcalfe 2019; links D11 to D9.)
+6. **No score recap after a reveal.** Scores appear at the end of the
+   round, as the payoff. (Keller et al. 2024; [INFERENCE] for the
+   score application.)
+
+Queued hypotheses (M3 §9e, ready for the experiment log): H-M3-1 gap
+size / common-mistake; H-M3-2 post-reveal placement (the direct test
+of rule 6); H-M3-3 the "why" line; H-M3-4 the returning question.
+Re-check triggers: first Studio retention curves; H-M3-2's result;
+any replication or extension of Keller et al. 2024; M4's arrival
+(score-keeping is shared D11/D12 territory).
 
 ---
 

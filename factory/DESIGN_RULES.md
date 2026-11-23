@@ -93,3 +93,76 @@ byte-identical.
 - The brain icon is the most abstract in the library: it reads as a
   stylised thinking blob at small size, not a literal brain. It is
   usable as a phase marker; it is not a literal illustration.
+
+## Rule 3 — Retention: the hook and the pacing (Module 2)
+
+Evidence: `research/retention-hooks-2026-11-22.md`. Level: LEARNING — no
+retention data from our own videos exists yet, so these rules are built
+from TikTok's own guidance and published retention data, and they are
+revised in writing when our Studio curves arrive.
+
+- **Promise by second 3.** The video's promise — what it is, what the
+  viewer gets — is spoken and on screen by second 3. Design to 2,
+  deadline 3. No greeting, no introduction, no logo-first frame.
+- **Frame 0 is live.** Something moves or changes in the first frame.
+  A static title card is not an opening.
+- **The question stays visible ≥3 seconds,** and the first change
+  (an elimination, a tick, a movement) lands before second 3.
+- **No dead seconds.** Every second of think time shows change —
+  countdown, progress, elimination, motion. A pause with nothing
+  changing is a lull and is cut.
+- **The promise test.** Every hook must deliver the exact thing it
+  promised. A hook that fails is rewritten, not published.
+- **Nothing unrelated immediately after a reveal.** The beat after a
+  reveal is the next question's hook — not an unrelated fact, a CTA,
+  branding, or a score recap. A one-sentence 'why' that belongs to the
+  answer just given is part of the reveal, not a violation. The reveal
+  itself gets a clean 1–2 second beat (answer + why, spoken and on
+  screen) before the next hook, and the next hook must be a real gap
+  ('Question 4' is not a hook). CONFIRMED as a rule by Module 3
+  (Keller et al. 2024, [ACADEMIC]); behavioural effect of a CTA after
+  a reveal still UNPROVEN — H-M3-2 tests it.
+- **Hook patterns live in `factory/HOOKS.md`.** One pattern per video.
+  The hook zone (y ~200–470) carries the promise text; the subtitle
+  band carries it in captions at the same time, so the hook survives
+  muted viewing.
+- **A reveal's spoken text must caption in ≤4 lines.** The answer text
+  sits at y 540 and the caption block is bottom-anchored at 830 with a
+  42 px line height, so a 5-line caption climbs into a two-line answer
+  (found on trivia round 2 Q4: a 6-line caption overwrote the answer
+  text — the safe-zone checker does not catch text-on-text overlap,
+  only text outside the safe box). Keep the why to one short sentence;
+  ~75 characters captions in 3 lines and is comfortable. If a reveal
+  needs a longer fact, the fact belongs in the script's `explain` field
+  and the report, not in the spoken reveal.
+
+## Rule 4 — Question design: the gap, the reveal, the dead zone (Module 3)
+
+Evidence: `research/curiosity-science-2026-11-22.md`. Level: LEARNING —
+lab findings, no feed transfer proven; the rules are adopted on academic
+evidence and are revised in writing when our own data, or a replication,
+says otherwise. The v2 prototypes are unchanged (they are the control);
+these rules govern round 2 onward.
+
+- **The "almost know" rule.** Every question passes the foothold test
+  (it contains something the viewer already knows) and the guess test
+  (a viewer can form a guess in the think time, even a wrong one).
+  Difficulty rises across a round: easy opener, medium middle, hardest
+  last. A question with no foothold is dropped, not simplified into a
+  giveaway.
+- **At least one common-mistake question per round.** The obvious answer
+  is wrong. Strongest memory device and most commentable question type.
+- **The reveal has three jobs.** State the answer unambiguously; show
+  why the likely guess was wrong in one short sentence; give the one
+  fact that makes the true answer feel inevitable. Then a clean 1–2
+  second beat on the answer before the next hook.
+- **Nothing unrelated immediately after a reveal.** (Rule 3's confirmed
+  form; M3 §8.) No unrelated fact, CTA, branding, or score recap in the
+  post-reveal beat. Scores appear at the end of the round only.
+- **Fact-checking is memory-critical.** A wrong answer is hyper-encoded
+  by exactly the viewers who engaged hardest. Every answer is verified
+  before rendering; "obvious" answers get the same verification as
+  obscure ones.
+- **The attempt is the product.** The video is built so answering in
+  the head is the natural behaviour: question visible, countdown gives
+  time, voice asks the viewer to commit before the timer ends.

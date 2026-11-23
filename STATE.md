@@ -1,6 +1,6 @@
 # Factory State
 
-Live operating state. Updated by every run. Last updated: 2026-11-22 ~15:58 UTC.
+Live operating state. Updated by every run. Last updated: 2026-11-22 ~23:01 UTC.
 
 ## Highest goal
 
@@ -129,16 +129,154 @@ independence from Mohamed's daily involvement. Zero spend in this stage.
   browser-location fact is recorded in both files. Single most
   important rule: no strategy is chosen before the diagnosis, and no
   strategy transfers between accounts by assumption.
+- **Professional learning program — Module 2 DONE.** Built 2026-11-22
+  ~16:30 UTC, ahead of the 19:45 loop run, because the work was ready
+  and there was no reason to wait for the schedule: `research/
+  retention-hooks-2026-11-22.md` (retention science + hooks, D5/D6;
+  claims tagged official / academic / practitioner-with-data /
+  practitioner-claim / unproven / inference) + `factory/HOOKS.md`
+  (8 named hook patterns, each with promise, opening line, delivery
+  requirement, falsifier) + `factory/DESIGN_RULES.md` Rule 3 (promise
+  by second 3, frame 0 live, question visible ≥3 s, no dead seconds,
+  promise test, nothing valuable right after a reveal) + LEARNING.md
+  queue updated (D5/D6 NONE → LEARNING). Key confirmed facts: 55% of
+  recommended TikTok videos are not watched till the end (Zannettou et
+  al., CHI 2024, 347 users, 9.2M views); 44–62% of viewers gone by
+  second 3 in the closest available analogue (code-rendered, AI-voiced,
+  new account); TikTok's own window is proposition in 3 s, hook in
+  6 s (ads guidance). Honest limits: no completion benchmark exists
+  (practitioner thresholds not adopted); the v2 prototypes are
+  UNCHANGED — their title-card openings are now known-weak by the new
+  rules, and that is information about the baseline, not a reason to
+  rebuild the control mid-test. Hook variants are the next experiment
+  round after EXP-001/EXP-002 close.
 
 ## In progress
 
-- **TikTok account — Mohamed is creating it, handover pending.**
-  2026-11-22 ~15:56 UTC: Mohamed is registering a clean British
-  account in his own browser and will hand it over. Standing rule: do
-  NOT assume anything from "British" beyond the registration-country
-  fact (UK, to be verified from the account itself when handed over);
-  audience, content, and monetization eligibility are discovered and
-  verified, not assumed.
+- **TikTok account — CREATED 2026-11-22 ~17:38 UTC.**
+  `@TheQuizTeaser`, display name "The Quiz Teaser", bio exactly as
+  decided, 0 followers / 0 videos / 0 likes — clean. Verified live by
+  reading the public profile. Registered by Mohamed with Google, not
+  with a password: this is NOT a problem — the factory never signs in
+  as the user, so there is no password to share and nothing to hand
+  over. Access: the API-key / developer-app route was REJECTED by
+  Mohamed 2026-11-22 ~17:42 UTC ("we will not publish with the key")
+  — the developer-app task was stopped, nothing was created, no code
+  was used. Handover now: Mohamed logs into the TikTok account
+  HIMSELF in Muse's cloud browser; the factory then operates the
+  account from that logged-in browser session (TikTok Studio web
+  upload, human pace, one video at a time, stop on any challenge).
+  The factory never enters his password and never logs in as him.
+  Browser is open on https://www.tiktok.com/login, nothing entered,
+  waiting for his takeover (confirmed 17:44 UTC).
+  **Comparison requested 2026-11-22 ~17:44 UTC:** Mohamed asked for
+  the pros and cons of publishing via API key vs via the browser on
+  TikTok Studio — answered in chat, no decision taken yet.
+  **Handover 2026-11-22 ~17:47 UTC:** Mohamed will hand over the
+  TikTok session cookies exported from his own logged-in browser
+  instead of logging in manually in the cloud browser. No password
+  involved. Cookies to be loaded into the cloud browser session and
+  the login verified; TikTok may still challenge a moved session —
+  if so, escalate to Mohamed.
+  **Cookie test result 2026-11-22 ~18:30 UTC:** all 27 cookies loaded
+  into a local Chromium on the VM (Playwright, headed under xvfb;
+  relay proxy needed for egress), but TikTok rejected the session —
+  guest state, Studio/upload redirect to login, no CAPTCHA, no
+  challenge. Most plausible cause: UK-registered account used from a
+  new device/IP (US datacenter egress — Seattle at check time, rotating; Morocco is the cloud browser only). Retrying the same
+  cookies DID change it — see retest 18:58 UTC below. Profile picture confirmed set.
+  Next: fresh cookie export after Mohamed uses the account, or
+  Mohamed logs in directly in the cloud browser (his earlier idea).
+  **Retest 2026-11-22 ~18:58 UTC — LOGGED IN:** Mohamed asked to
+  retry the same cookies while watching Gmail. Second run of
+  verify_session.py (same 27 cookies, same local browser):
+  HOME shows logged-in nav, PROFILE shows 'Edit profile' (owner),
+  STUDIO loads with the account identity + key metrics (all 0,
+  'Est. rewards', 'No posts yet'), UPLOAD loads without redirect.
+  No challenge, no code requested; Gmail check found no new TikTok
+  mail (only the 17:01 and 17:41 UTC emails). Why the second attempt
+  worked when the first was refused is NOT established — do not
+  claim a cause. Session profile persists at tiktok-session/profile/.
+  Next: per-account diagnosis, then publish v2 prototypes as
+  EXP-001/EXP-002.
+  **Diagnosis DONE 2026-11-22 ~19:06 UTC:** accounts/thequizteaser/
+  DIAGNOSIS.md (279 lines, all 12 sections). Account region United
+  Kingdom (TikTok Settings, verbatim). Profile picture SET. Counts
+  0/0/0/0, no videos. Account type UNKNOWN (web settings do not
+  state it; confirm from the app). Monetization (Studio →
+  Monetization, read ~19:04 UTC): Creator Rewards Programme
+  'Ineligible' (no reason stated); every programme Ineligible
+  except Gaming Incentive (Recommended); total rewards $0.00;
+  'Get notified when I'm eligible' link present. Status recorded
+  as NOT ELIGIBLE — thresholds (followers/views) unmet is a
+  labelled inference, not Studio's words. One unread Activity
+  notification, unopened. Session still logged in. Next: publish
+  EXP-001 (trivia v2), then EXP-002 (riddle v2) next day.
+  **Cadence revised 2026-11-22 ~19:16 UTC (Mohamed): heavy publishing,
+  not 1/day.** Ramp: Day 1 = 1 video (first-upload capability test);
+  from Day 2 = 3/day spaced hours apart; 5+/day after one clean
+  week if data supports it. His evidence: news accounts publish
+  heavily and nobody is banned. Professional note recorded in
+  EXPERIMENTS.md §8: news accounts are established, human teams,
+  unique timely stories — volume is not the risk, volume on a
+  brand-new automated templated account is. Guards: spacing,
+  variety per video (similarity check), complete profile, real
+  session, human pace. First publish (EXP-001 trivia v2) started
+  ~19:16 UTC via local-browser Studio upload.
+  **Ownership correction 2026-11-22 ~19:23 UTC:** Mohamed: Muse is
+  the operational and intellectual owner of the project; he sets
+  the goal, constraints and permissions only. No more turning
+  unknowns into questions for him — research, test, decide
+  professionally. Ask only for what truly needs the account owner,
+  or a financial/legal commitment, or a fundamental ownership/goal
+  change; even then, continue all other work. Voice + GitHub
+  questions withdrawn: voice stays af_heart (judged later by
+  audience data); GitHub suspension parked (does not block the
+  factory).
+  **EXP-001 PUBLISHED 2026-11-22 ~19:35 UTC — WITH DEFECT:** trivia
+  v2 live (video 7711080785582787862), caption exact, Public, 1
+  view/1 like at first check. Defect: AI-generated label OFF
+  (script's background-colour check was a false positive;
+  screenshot proves toggle grey). Label cannot be added
+  post-publish (edit view has no toggle). Decision (mine, per
+  ownership rule): delete + re-publish correctly with real
+  toggle-state verification; fix subagent running. EXP-002 on hold
+  until the fix is proven.
+  **EXP-001 FIXED 2026-11-22 ~19:50 UTC:** old video deleted
+  19:43 UTC (confirmed 3 ways); re-published 19:50:09 UTC, new
+  video 7711084680379895063, AI label verified ON three ways
+  (DOM chromatic rgb(32,213,236), blue-toggle screenshot, public
+  page shows 'Creator labelled as AI-generated'). Measurement
+  window runs from 19:50 UTC, judged 2026-11-29. EXP-002 may
+  proceed; Day 2 (2026-11-23) = 3 videos.
+  **Module 3 DONE 2026-11-22 ~19:55 UTC (19:45 loop run):**
+  research/curiosity-science-2026-11-22.md (838 lines). D11 NONE →
+  LEARNING. M2 rule 6 CONFIRMED [ACADEMIC] + refined (unrelated
+  material only; 'why' belongs to the reveal; clean 1–2 s beat;
+  next hook must be a real gap). New design inputs for round 2:
+  foothold/guess tests, rising difficulty, ≥1 common-mistake
+  question/round, spaced return of material. Next module: M4
+  gamification (D12).
+  **Charter 2026-11-22 ~19:55 UTC:** Mohamed's full self-discovery
+  charter recorded in MEMORY.md — Muse builds its own strength,
+  discovers what it needs incl. the unknown, Gmail registration
+  authority for free services (unique credentials, no unified
+  password, no payment/card/auto-converting subs without his
+  authorization), no account-collecting, actions not promises.
+  Day-2 production (trivia round 2 + riddle round 2, M3 rules
+  applied) started ~19:56 UTC.
+  **Day-2 production DONE 2026-11-22 ~20:16 UTC:** prototype-2/
+  trivia-round-2.mp4 (105.97 s, SHA 1c75f2b8…) + riddle-round-2.mp4
+  (109.49 s, SHA ad9b3fcc…), both PASS (safe-zone 0 failed frames,
+  black/freeze/silence 0, byte-identical reruns, WER 0.019/0.017).
+  M3 applied: 1.5 s clean post-reveal holds, foothold/guess tests,
+  rising difficulty, common-mistake slot (Antarctic desert). Real
+  defect found+fixed: Q4 caption (6 lines) overlapped the answer
+  text — the safe-zone checker cannot catch text-on-text overlap;
+  new Rule 3: a reveal's spoken text must caption in ≤4 lines.
+  Day 2's 3 videos are READY: EXP-002 riddle v2 + trivia r2 +
+  riddle r2 (the subagent's 'needs a third video' note miscounted
+  — EXP-002 is the third). Nothing published tonight.
 - **Account access protocol — DONE.** Built 2026-11-22 ~15:58 UTC:
   `factory/ACCOUNT_ACCESS.md` (429 lines). Core rules: legitimate
   surfaces only (Login Kit OAuth, Content Posting API draft mode,
@@ -169,6 +307,21 @@ independence from Mohamed's daily involvement. Zero spend in this stage.
   and all decisions for factory work. Boundaries that remain: no spending,
   no financial/legal commitments, no publishing or sharing private data, no
   irreversible changes, except on a clear assignment for each task.
+- Self-discovery charter 2026-11-22 ~19:55 UTC (Mohamed, recorded in
+  MEMORY.md): Muse builds its own strength and expands its ability to
+  discover knowledge, opportunities, and itself, beyond what Mohamed or
+  Muse currently know; it does not wait to be given site, tool, or
+  source names. New authority: use Gmail via connectors to receive
+  verification codes and complete registrations in FREE services that
+  develop its capabilities or serve the factory, with unique secure
+  credentials per service, no shared password, no credentials in
+  project files or logs, after checking terms, licences, limits, and
+  costs; no service requiring payment, a card, or an auto-converting
+  subscription without his authorisation. Discovery must end in real
+  tested capability, not a count of tools or accounts; a better way is
+  tested and compared before replacing what works. Escalate only for a
+  permission he holds, an owner-only action, or a financial/legal
+  commitment. Actions, not promises.
 - Kokoro-82M: ADOPT as the voice layer via kokoro-onnx. Apache-2.0 weights
   verified (Hugging Face API, 13.25M downloads, not gated); synthesis
   measured on this VM: 12.68 s of US-English audio in 33.8 s (RTF 2.67,
@@ -204,6 +357,16 @@ independence from Mohamed's daily involvement. Zero spend in this stage.
 
 ## Blockers
 
+- **OPEN — push pending approval (2026-11-22 ~23:01 UTC).** The 19:45
+  loop run's snapshot push (10 files: STATE.md, RUNLOG.md, M3 + M2
+  reports, LEARNING.md, HOOKS.md, DESIGN_RULES.md, EXPERIMENT_LOG.md,
+  EXPERIMENTS.md, DIAGNOSIS.md) did NOT land: two GitHub write-approval
+  requests timed out ungranted (requested 20:04:15 UTC and 21:01:31
+  UTC, both "Timed out" per the approval history). Remote head verified
+  still 05787cb4 — nothing pushed, nothing half-applied. The files are
+  ready locally; retry the push next run (the approval has to come
+  from Mohamed in the main chat). Do NOT assume the remote has the
+  M3 / EXP-001-fix state until a push is confirmed.
 - None open. Resolved 2026-11-22 ~11:25 UTC: the Factory Test 2 push
   landed on retry (commit e9017a06, approved during the call; verified
   by reading the remote repo — factory-test-2/ present with REPORT.md,
@@ -231,19 +394,22 @@ independence from Mohamed's daily involvement. Zero spend in this stage.
 
 ## Next step
 
-1. Next learning module in the loop: M2 retention science + hooks
-   (factory/LEARNING.md queue, now 17 modules).
-2. When Mohamed hands over the dedicated TikTok account, verify access
-   and publish the v2 prototypes as the first experiments (EXP-001
-   trivia vs EXP-002 riddles), by the manual path first. Record the
-   monetization status truthfully from TikTok Studio — currently
-   UNKNOWN, no account exists yet.
-2. Mohamed evaluates the two prototype videos (voice, visuals, format
-   preference). Then decide the audience-test route: the TikTok account
-   is managed by the other agent and Muse does not publish — publishing
-   a test needs Mohamed's explicit assignment for that task.
-3. If he picks am_adam, re-synthesize narration and re-render both
-   videos with that voice (~2 min synthesis + ~70 s render per video).
+1. Next learning module in the loop: M4 gamification & habit
+   architecture (D12) — output `research/gamification-habits-YYYY-MM-DD.md`.
+   M3 curiosity science DONE 2026-11-22 ~19:55 UTC.
+2. Day-2 production (prototype-2: trivia round 2 + riddle round 2, M3
+   rules applied) is running; publish EXP-002 (riddle v2) and the
+   round-2 videos on the 3/day ramp from 2026-11-23, spaced hours
+   apart, one at a time, stopping on any challenge. AI label verified
+   ON before every post (the v1 false-positive lesson is in the
+   publish script now).
+3. EXP-001 measurement window closes 2026-11-29 (needs ≥1,000 views
+   to judge); read Studio then and record the verdict in
+   EXPERIMENT_LOG.md.
+4. Mohamed's evaluation of the v2 prototypes is still pending; no loop
+   work depends on it. Voice stays af_heart unless audience data says
+   otherwise (the am_adam question was withdrawn per the 19:23
+   ownership correction).
 
 ## Commercial discipline (standing rule, 2026-11-22)
 
@@ -255,7 +421,10 @@ independence from Mohamed's daily involvement. Zero spend in this stage.
 - No successful style is final; keep searching for better performance
   without sacrificing the stability of what works.
 - Monetization status is recorded truthfully and only from evidence.
-  Current status: NO dedicated account exists yet — status UNKNOWN.
+  Current status: account @TheQuizTeaser exists; Creator Rewards
+  "Ineligible" (Studio → Monetization, read 2026-11-22 ~19:04 UTC);
+  total rewards $0.00. EXP-001 published 2026-11-22 19:50 UTC,
+  judged 2026-11-29.
   Never claim the account is monetized and never record revenue that
   has not actually happened.
 - Mohamed decides niche, style, tools, and test method no longer — the

@@ -188,12 +188,13 @@ Grounded in **measured** compute times on this machine (sources: `prototype-1/RE
 | Verification (ffprobe, black/freeze/silence detects, contact sheet) | **~1–2 min** |
 | **Total machine time per video** | **~3–4 minutes, sequential** |
 
-**Proposed cadence: 1 video per day (7 per week).**
-- Why it is sustainable: 1 video is ~4 minutes of machine time; the loop wakes every 6 hours, so a day holds far more compute headroom than one video needs. The binding constraints are not compute — they are (a) the human steps that cannot be automated yet (publishing, reading TikTok Studio for retention) and (b) the need for ideas that stay fresh. One video a day is a pace a single person can sustain for the manual steps and a pace the factory can sustain for ideas.
-- Why not more: publishing more than 1/day would shrink each video's measurement window (the 7-day / 1,000-view rule needs time and views per video) and would burn through the idea queue before the factory has learned what works. Volume without learning is the opposite of this protocol.
-- Why not less: fewer than ~5/week makes each experiment take too long to judge and gives the audience too little to return to.
-- **API caps check:** Direct Post is capped at about 15 posts/day per creator account and Upload (draft) at 5 pending shares per 24 h (see the connection research). A 1/day cadence is far below both — the caps are not binding.
-- **Weekly rhythm:** publish daily; read and record numbers when each video's window closes (staggered, 7 days after its publish date); hold one learning review per week — read the log, write the next hypothesis, update the control if a variant won and was confirmed. The review is the factory's heartbeat, not a report for its own sake.
+**Cadence — revised 2026-11-22 (Mohamed's decision): heavy publishing, ramped, not 1/day.**
+- **The ramp:** Day 1 (2026-11-22): 1 video — the first upload through the local browser is untested, so the first post is a capability test. From Day 2: **3 videos/day**, spaced hours apart (morning / afternoon / evening, not back-to-back). After one clean week with no suppression signal, scale to **5+/day** if the data supports it.
+- **Why a ramp, not a blast on day 1:** a <1-day-old account posting many templated videos at once is exactly the pattern anti-spam systems watch — newness + sudden velocity + sameness + automation. News accounts are a different case: established accounts, human teams, each story unique and timely, volume earned over years. Volume alone never got them banned; volume is not the risk — volume on a brand-new automated account is.
+- **What keeps heavy publishing from looking robotic:** (a) spacing — hours between posts, never minutes; (b) variety — every video a different topic/hook (TikTok's similarity check de-duplicates look-alike videos; Module 1, H-VAR-1); (c) complete profile and real session; (d) human pace, no mass actions; (e) no volume for its own sake — every video still passes the design rules and the pre-publish check.
+- **What does not change:** the 7-day / 1,000-view judgement window per video; the comparison stays fair — formats alternate across days and rotate time slots so neither format always gets the best slot; one variant at a time per format. Volume buys learning speed (more data points sooner) and audience habit; it does not buy revenue — Creator Rewards does not favour an excessive amount of videos (Module 1, official).
+- **Compute:** ~4 min machine time per video; 3/day ≈ 12 min, 5/day ≈ 20 min. Compute is not binding.
+- **Weekly rhythm:** publish on the ramp; read and record numbers when each video's window closes (staggered, 7 days after its publish date); hold one learning review per week — read the log, write the next hypothesis, update the control if a variant won and was confirmed. The review is the factory's heartbeat, not a report for its own sake.
 
 ---
 
