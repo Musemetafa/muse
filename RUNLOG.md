@@ -390,3 +390,9 @@ for the next run. Newest at the bottom.
   and 21:01:31 UTC). Remote head verified still 05787cb4 after both.
   No retry in this run per the loop rules. Blocker recorded in
   STATE.md; the push must be retried next run with Mohamed's approval.
+- 2026-11-23 ~00:05 UTC — Push LANDED on Mohamed's approval in the
+  main chat (commit 576f0c55, 10 files, message "Module 3 curiosity
+  science + EXP-001 fixed and live; M3 rules adopted"). The manifest
+  file had been cleaned up, so it was recreated from the 20:04
+  command before pushing. Remote head verified 576f0c55. Blocker
+  resolved; sync record updated (16 entries).

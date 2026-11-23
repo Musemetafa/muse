@@ -357,16 +357,12 @@ independence from Mohamed's daily involvement. Zero spend in this stage.
 
 ## Blockers
 
-- **OPEN — push pending approval (2026-11-22 ~23:01 UTC).** The 19:45
-  loop run's snapshot push (10 files: STATE.md, RUNLOG.md, M3 + M2
-  reports, LEARNING.md, HOOKS.md, DESIGN_RULES.md, EXPERIMENT_LOG.md,
-  EXPERIMENTS.md, DIAGNOSIS.md) did NOT land: two GitHub write-approval
-  requests timed out ungranted (requested 20:04:15 UTC and 21:01:31
-  UTC, both "Timed out" per the approval history). Remote head verified
-  still 05787cb4 — nothing pushed, nothing half-applied. The files are
-  ready locally; retry the push next run (the approval has to come
-  from Mohamed in the main chat). Do NOT assume the remote has the
-  M3 / EXP-001-fix state until a push is confirmed.
+- Resolved 2026-11-23 ~00:05 UTC: the pending push LANDED on Mohamed's
+  approval in the main chat (commit 576f0c55, 10 files: STATE.md,
+  RUNLOG.md, M3 + M2 reports, LEARNING.md, HOOKS.md, DESIGN_RULES.md,
+  EXPERIMENT_LOG.md, EXPERIMENTS.md, DIAGNOSIS.md). Remote head
+  verified 576f0c55. The two timed-out requests (20:04, 21:01 UTC)
+  were superseded by this approved retry.
 - None open. Resolved 2026-11-22 ~11:25 UTC: the Factory Test 2 push
   landed on retry (commit e9017a06, approved during the call; verified
   by reading the remote repo — factory-test-2/ present with REPORT.md,
